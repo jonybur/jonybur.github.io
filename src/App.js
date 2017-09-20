@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import styles from './styles.css';
 
 class App extends Component {
@@ -15,9 +13,11 @@ class App extends Component {
       randomRotation = randomRotation < minRotation ? minRotation : randomRotation
       var size = Math.random() * 9
       size = size < 6 ? 6 : size
+      var randomX = Math.random() | 0;
       const values = {
         'rotation': randomRotation,
-        'size': size
+        'size': size,
+        'translateX': randomX
       }
       objects.push(values)
     }
@@ -26,8 +26,8 @@ class App extends Component {
 
   render() {
     return (
-      <div> 
-        { this.state.objects.map(val => <Test rotation={val.rotation} size={val.size} key={Math.random()} />) }
+      <div className='container'> 
+        { this.state.objects.map((val, index) => <Test {...val} key={index} />) }
       </div>
     );
   }
@@ -35,23 +35,18 @@ class App extends Component {
 
 class Test extends Component {
 
-  constructor(props){
-    super(props)
-    this.state = { 
-      rotation: props.rotation,
-      size: props.size
-    }
-  }
-
   render(){
-
     const style = {
-      animationDuration: this.state.rotation + 'ms',
-      width: this.state.size + '%',
+      animationDuration: this.props.rotation + 'ms',
+      width: this.props.size * 3+ '%',
+      right: this.props.translateX * 100,
       height: 'auto'
+      //transform: `translateX(${this.props.translateX * window.innerWidth}px)`
     }
     return(
-      <img src='./empanada.png' className='empanada' style={style}/>
+      <div className='empanada'>
+        <img src='./empanada.png' className='rotate' style={style}/>
+      </div>
     )
   }
 
