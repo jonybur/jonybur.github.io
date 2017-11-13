@@ -1,3 +1,7 @@
+// orange: e35000
+// blue: 3d8ebf
+// dark blue: 203c40
+
 @font-face {
     font-family: Clarendon;
     src: url("clarendon.otf") format("opentype");
@@ -11,8 +15,56 @@ h1 {
   font-family: "cooper-black-std";
   font-style: italic;
   font-weight: 400;
+  color: #e35000;
 }
 
 p {
   font-family: Clarendon;
+  color: #203c40;
+  font-size: 36px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header a {
+  color: #3d8ebf;
+}
+
+.header {
+  padding-top: 210px;
+  padding-left: 60px;
+  width: 70vw;
+  display: -ms-flexbox;
+  display: block;
+  -ms-flex-pack: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.links {
+  font-family: "cooper-black-std";
+  margin-right: 10px;
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.links a {
+  margin-right: 40px;
+  color: #203c40;
+}
+
+.links a:link,
+.links a:visited {
+	display: inline-block;
+	text-decoration: none;
+  border-bottom: 3px solid transparent;
+	transition: border-bottom 0.2s;
+}
+
+.links a:hover,
+.links a:active {
+  border-bottom: 4px solid #203c40;
 }

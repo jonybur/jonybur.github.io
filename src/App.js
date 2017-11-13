@@ -9,11 +9,18 @@ class App extends Component {
   
   render() {
     return (
-      <div>
-        <h1>Hey there,</h1>
-        <p>My name is Jonathan Bursztyn,</p>
-        <p>I'm a Software Engineer at MuleSoft</p>
-        <p>Sometimes I like taking pictures</p>
+      <div className="header">
+        <div>
+          <h1>Hey there,</h1>
+          <p>My name is Jonathan Bursztyn,</p>
+          <p>I'm a Software Engineer at <a href="https://www.mulesoft.com">MuleSoft</a></p>
+          <p>Sometimes I like taking <a href="">pictures</a></p>
+        </div>
+        <div className="links">
+          <a href="">Portfolio</a>
+          <a href="https://www.github.com/jonybur">GitHub</a>
+          <a href="https://www.linkedin.com/in/jonybur">LinkedIn</a>
+        </div>
       </div>
     );
   }
