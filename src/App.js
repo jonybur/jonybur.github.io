@@ -1,6 +1,22 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 import styles from './styles.css';
 
+const Home = () => (
+  <div>
+    <h2>Home</h2>
+  </div>
+)
+
+const About = () => (
+  <div>
+    <h2>About</h2>
+  </div>
+)
 class App extends Component {
 
   constructor(props){
@@ -14,10 +30,12 @@ class App extends Component {
           <h1>Hey there,</h1>
           <p>My name is Jonathan Bursztyn,</p>
           <p>I'm a Software Engineer at <a href="https://www.mulesoft.com" target="_blank">MuleSoft</a></p>
-          <p>Sometimes I like taking <a href="" target="_blank">pictures</a></p>
+          <p>Sometimes I like taking <Router><Link to="/photography">photography</Link></Router></p>
         </div>
         <div className="links">
-          <a href="" target="_blank">Portfolio</a>
+            <Router>
+              <Link to="/portfolio">Portfolio</Link>
+            </Router>
           <a href="https://www.github.com/jonybur" target="_blank">GitHub</a>
           <a href="https://www.linkedin.com/in/jonybur" target="_blank">LinkedIn</a>
         </div>
