@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, PureComponent } from 'react';
 import {
   BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom'
 
-export class Photography extends Component {
+export class Photography extends PureComponent {
   render() {
     return (
       <div className="wrapper">
