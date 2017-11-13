@@ -6,19 +6,12 @@ import {
 } from 'react-router-dom'
 import styles from './styles.css';
 
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-)
-
 const About = () => (
   <div>
     <h2>About</h2>
   </div>
 )
-class App extends Component {
-
+export class Home extends Component {
   constructor(props){
     super(props);
   }
@@ -43,5 +36,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
