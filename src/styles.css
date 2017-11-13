@@ -1,55 +1,18 @@
-body{
-    background-color: #f88e1b;
+@font-face {
+    font-family: Clarendon;
+    src: url("clarendon.otf") format("opentype");
 }
 
-.empanada {
-    margin: 40px;
-    position: absolute;
-    
-    //width: 100px;
-    //height: auto;
-
-    //animation-name: ;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation: drop 10s linear infinite;
+body {
+  background-color: #faeed9;
 }
 
-.rotate {
-    animation: spin 4s ease-in-out infinite alternate;
+h1 {
+  font-family: "cooper-black-std";
+  font-style: italic;
+  font-weight: 400;
 }
 
-.container{
-    max-height: 700px;
-    //overflow: hidden;
-}
-
-@-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(360deg); }
-}
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-@keyframes drop {
-    from{
-        transform: translateY(0vh);
-    }
-    to{
-        transform: translateY(100vh);
-    }
+p {
+  font-family: Clarendon;
 }
