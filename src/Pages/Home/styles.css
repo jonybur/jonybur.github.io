@@ -6,7 +6,7 @@ dark blue: 203c40
 
 @font-face {
   font-family: Clarendon;
-  src: url("../../clarendon.otf") format("opentype");
+  src: url("../../Resources/clarendon.otf") format("opentype");
 }
 
 body {
