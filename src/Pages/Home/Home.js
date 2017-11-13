@@ -6,16 +6,7 @@ import {
 } from 'react-router-dom'
 import styles from './styles.css';
 
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-)
 export class Home extends Component {
-  constructor(props){
-    super(props);
-  }
-  
   render() {
     return (
       <div className="wrapper">
