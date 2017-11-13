@@ -1,6 +1,6 @@
 import React, { Component, PureComponent } from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Link
 } from 'react-router-dom'
@@ -13,9 +13,7 @@ export class Photography extends PureComponent {
           <h1>Photography,</h1>
         </div>
         <div className="links">
-          <Router>
-            <Link to="/">Home</Link>
-          </Router>
+          <Link to="/">Home</Link> 
         </div>
       </div>
     );

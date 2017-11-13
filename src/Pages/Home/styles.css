@@ -4,36 +4,12 @@ blue: 3d8ebf
 dark blue: 203c40
 */
 
-@font-face {
-  font-family: Clarendon;
-  src: url("../../Resources/clarendon.otf") format("opentype");
-}
-
-body {
-  background-color: #faeed9;
-}
-
-h1 {
-  font-family: "cooper-black-std";
-  font-style: italic;
-  font-weight: 400;
-  color: #e35000;
-}
-
-p {
-  font-family: Clarendon;
-  color: #203c40;
-  font-size: 36px;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
 .wrapper {
-  padding-top: 205px;
-  padding-left: 60px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 /* header */
