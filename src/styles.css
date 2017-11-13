@@ -1,10 +1,12 @@
-// orange: e35000
-// blue: 3d8ebf
-// dark blue: 203c40
+/*
+orange: e35000
+blue: 3d8ebf
+dark blue: 203c40
+*/
 
 @font-face {
-    font-family: Clarendon;
-    src: url("clarendon.otf") format("opentype");
+  font-family: Clarendon;
+  src: url("clarendon.otf") format("opentype");
 }
 
 body {
@@ -29,13 +31,14 @@ a {
   text-decoration: none;
 }
 
-.header a {
-  color: #3d8ebf;
+.wrapper {
+  padding-top: 205px;
+  padding-left: 60px;
 }
 
+/* header */
+
 .header {
-  padding-top: 210px;
-  padding-left: 60px;
   width: 70vw;
   display: -ms-flexbox;
   display: block;
@@ -43,6 +46,22 @@ a {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
+.header a {
+  color: #3d8ebf;
+}
+
+.header a:link,
+.header a:visited {
+  transition: color 0.2s;
+}
+
+.header a:hover,
+.header a:active {
+  color: #1A5172;
+}
+
+/* links */
 
 .links {
   font-family: "cooper-black-std";

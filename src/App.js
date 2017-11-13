@@ -9,8 +9,8 @@ class App extends Component {
   
   render() {
     return (
-      <div className="header">
-        <div>
+      <div className="wrapper">
+        <div className="header">
           <h1>Hey there,</h1>
           <p>My name is Jonathan Bursztyn,</p>
           <p>I'm a Software Engineer at <a href="https://www.mulesoft.com">MuleSoft</a></p>
