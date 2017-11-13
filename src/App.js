@@ -13,13 +13,13 @@ class App extends Component {
         <div className="header">
           <h1>Hey there,</h1>
           <p>My name is Jonathan Bursztyn,</p>
-          <p>I'm a Software Engineer at <a href="https://www.mulesoft.com">MuleSoft</a></p>
-          <p>Sometimes I like taking <a href="">pictures</a></p>
+          <p>I'm a Software Engineer at <a href="https://www.mulesoft.com" target="_blank">MuleSoft</a></p>
+          <p>Sometimes I like taking <a href="" target="_blank">pictures</a></p>
         </div>
         <div className="links">
-          <a href="">Portfolio</a>
-          <a href="https://www.github.com/jonybur">GitHub</a>
-          <a href="https://www.linkedin.com/in/jonybur">LinkedIn</a>
+          <a href="" target="_blank">Portfolio</a>
+          <a href="https://www.github.com/jonybur" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/jonybur" target="_blank">LinkedIn</a>
         </div>
       </div>
     );
