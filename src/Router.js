@@ -11,8 +11,8 @@ import { styles } from './Router.css';
 class MainRouter extends PureComponent {
   render () {
     return (
-      <Router className="pirulo">
-        <div className="piruloDos">
+      <Router className="router">
+        <div className="router">
           <Route exact path="/" component={Home}/>
           <Route path="/photography" component={Photography}/>
           {/*<Route path="/portfolio" component={Home}/>*/}

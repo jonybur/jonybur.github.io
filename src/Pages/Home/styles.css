@@ -7,8 +7,7 @@ dark blue: 203c40
 .wrapper {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
+  align-items: center;  
   height: 100%;
 }
 
@@ -37,6 +36,11 @@ dark blue: 203c40
   color: #1A5172;
 }
 
+.content {
+  margin-left: 140px;
+  margin-bottom: 50px;
+}
+
 /* links */
 
 .links {
@@ -62,4 +66,22 @@ dark blue: 203c40
 .links a:hover,
 .links a:active {
   border-bottom: 4px solid #203c40;
+}
+
+.mac {
+  width: 260px;
+  position: absolute;
+  right: 12%;
+  bottom: 14%;
+  z-index: 100;
+}
+
+.video {
+  transform: rotate(4deg);
+  width: 130px;
+  height: 110px; 
+  display: flex;
+  position: absolute;
+  right: 17.9%;
+  bottom: 34%;
 }

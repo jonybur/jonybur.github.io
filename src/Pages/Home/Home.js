@@ -4,13 +4,14 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import YouTube from 'react-youtube';
 import styles from './styles.css';
 
 export class Home extends PureComponent {
   render() {
     return (
       <div className="wrapper">
-        <div>
+        <div className="content">
           <div className="header">
             <h1>Hey there,</h1>
             <p>My name is Jonathan Bursztyn,</p>
@@ -23,6 +24,12 @@ export class Home extends PureComponent {
             <a href="https://www.linkedin.com/in/jonybur" target="_blank">LinkedIn</a>
             <a href="mailto:jonathan@bursz.com" target="_blank">Contact</a>
           </div>
+          <img className="mac" src="mac.png" alt="Mountain View"></img>
+          <YouTube
+            video="W9sxKjq44AA"
+            autoplay={true}
+            className="video"
+          />
         </div>
       </div>
     );
