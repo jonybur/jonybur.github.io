@@ -22,7 +22,7 @@ export class Home extends PureComponent {
             {/*<Link to="/portfolio">Portfolio</Link>*/}
             <a href="https://www.github.com/jonybur" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/jonybur" target="_blank">LinkedIn</a>
-            <a href="mailto:jonathan@bursz.com" target="_blank">Contact</a>
+            <a href="mailto:jobur93@gmail.com" target="_blank">Contact</a>
           </div>
           {/*<img className="mac" src="mac.png" alt="Mountain View"></img>
           <YouTube
