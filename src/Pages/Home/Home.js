@@ -15,6 +15,7 @@ export class Home extends PureComponent {
     this.state = {
       videoId: "662JyNLVpxE",
       player: null,
+      muteButtonText: "Unmute Video"
     };
 
     this.onReady = this.onReady.bind(this);
@@ -31,17 +32,33 @@ export class Home extends PureComponent {
   }
 
   onReady(event) {
-    //event.target.mute();
-    event.target.setLoop(true)
-    event.target.setShuffle(true)
+    event.target.mute();
+    event.target.setLoop(true);
+    event.target.setShuffle(true);
     event.target.nextVideo();
     this.setState({
       player: event.target,
     });
   }
 
-  render() {
+  onNextVideo = () => {
+    this.state.player.nextVideo();
+  }
 
+  onMuteVideo = () => {
+
+    this.setState({
+      muteButtonText: this.state.player.isMuted() ? 'Mute Video' : 'Unmute Video'
+    })
+
+    if (this.state.player.isMuted()) {
+      this.state.player.unMute();
+    } else {
+      this.state.player.mute();
+    }
+  }
+
+  render() {
     const opts = {
       height: '360',
       width: '640',
@@ -79,11 +96,13 @@ export class Home extends PureComponent {
           <div className="macWrapper">
             <img className="mac" src="mac.png" alt="Vintage Macintosh"/>
             <YouTube
-              //videoId='Ag6H1e1rXJ0'
+              videoId='nxxSIX3fmmo'
               onReady={this.onReady}
               opts={opts}
               className="video"
             />
+            <div className="muteButton" title={this.state.muteButtonText} onClick={this.onMuteVideo}/>
+            <div className="nextButton" title="Next Video" onClick={this.onNextVideo}/>
           </div>
         </div>
       </div>
