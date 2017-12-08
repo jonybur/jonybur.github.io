@@ -13,7 +13,6 @@ export class Home extends PureComponent {
     super(props);
 
     this.state = {
-      videoId: "662JyNLVpxE",
       player: null,
       muteButtonText: "Unmute Video"
     };
