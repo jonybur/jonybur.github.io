@@ -8,7 +8,59 @@ import YouTube from 'react-youtube';
 import styles from './styles.css';
 
 export class Home extends PureComponent {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      videoId: "662JyNLVpxE",
+      player: null,
+    };
+
+    this.onReady = this.onReady.bind(this);
+    this.onPlayVideo = this.onPlayVideo.bind(this);
+    this.onPauseVideo = this.onPauseVideo.bind(this);
+  }
+
+  onPlayVideo() {
+    this.state.player.playVideo();
+  }
+
+  onPauseVideo() {
+    this.state.player.pauseVideo();
+  }
+
+  onReady(event) {
+    //event.target.mute();
+    event.target.setLoop(true)
+    event.target.setShuffle(true)
+    event.target.nextVideo();
+    this.setState({
+      player: event.target,
+    });
+  }
+
   render() {
+
+    const opts = {
+      height: '360',
+      width: '640',
+      modestbranding: 1,
+      playerVars: {
+        controls: 0,
+        autoplay: 1,
+        disablekb: 1,
+        modestbranding: 1,
+        showinfo: 1,
+        cc_load_policy: 0,
+        list: 'PL80DKoeLzUZlm8TtJpxbbBMktKO3NmGfs',
+        listType: 'playlist',
+        rel: 0,
+        playsinline: 1,
+        loop: 1
+      }
+    };
+
     return (
       <div className="wrapper">
         <div className="content">
@@ -24,12 +76,15 @@ export class Home extends PureComponent {
             <a href="https://www.linkedin.com/in/jonybur" target="_blank">LinkedIn</a>
             <a href="mailto:jobur93@gmail.com" target="_blank">Contact</a>
           </div>
-          {/*<img className="mac" src="mac.png" alt="Mountain View"></img>
-          <YouTube
-            video="W9sxKjq44AA"
-            autoplay={true}
-            className="video"
-          />*/}
+          <div className="macWrapper">
+            <img className="mac" src="mac.png" alt="Vintage Macintosh"/>
+            <YouTube
+              //videoId='Ag6H1e1rXJ0'
+              onReady={this.onReady}
+              opts={opts}
+              className="video"
+            />
+          </div>
         </div>
       </div>
     );
