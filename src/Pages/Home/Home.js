@@ -93,16 +93,24 @@ export class Home extends PureComponent {
             <a href="https://www.linkedin.com/in/jonybur" target="_blank">LinkedIn</a>
             <a href="mailto:jobur93@gmail.com" target="_blank">Contact</a>
           </div>
-          <div className="macWrapper">
-            <img className="mac" src={this.state.mac+".png"} alt="Vintage Macintosh"/>
-            <YouTube
-              videoId='nxxSIX3fmmo'
-              onReady={this.onReady}
-              opts={opts}
-              className="video"
-            />
-            <div className="muteButton" title={this.state.muteButtonText} onClick={this.onMuteVideo}/>
-            <div className="nextButton" title="Next" onClick={this.onNextVideo}/>
+          <div className="cinematronWrapper">
+            <div className="cinematronHelp">
+              <h1 className="cinematronTitle">Cinematron 6000</h1>
+              <p className="cinematronDescription">Invites you to enjoy this incredibly tasteful<br/>cinematrographic experience</p>
+              <p className={"muteButtonDescription " + this.state.muteButtonText}>{this.state.muteButtonText} -</p>
+              <p className="nextButtonDescription">Next -</p>
+            </div>
+            <div className="macWrapper">
+              <img className="mac" src={this.state.mac+".png"} alt="Vintage Macintosh"/>
+              <YouTube
+                videoId='nxxSIX3fmmo'
+                onReady={this.onReady}
+                opts={opts}
+                className="video"
+              />
+              <div className="muteButton" title={this.state.muteButtonText} onClick={this.onMuteVideo}/>
+              <div className="nextButton" title="Next" onClick={this.onNextVideo}/>
+            </div>
           </div>
         </div>
       </div>

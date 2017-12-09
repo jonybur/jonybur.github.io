@@ -70,10 +70,12 @@ dark blue: 203c40
 
 .macWrapper {
   position: absolute;
-  right: 140px;
-  bottom: 90px;
-  overflow:hidden;
+  right: 0;
+  top: 100px;
+  /* bottom: 90px; */
+  overflow: hidden;
   width: 300px;
+  text-align: right;
 }
 
 .mac {
@@ -116,6 +118,60 @@ dark blue: 203c40
   z-index: 200;
 }
 
+.cinematronWrapper {
+  right: 140px;
+  height: 444px;
+  position: absolute;
+  bottom: 60px;
+}
+
+.cinematronHelp {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cinematronWrapper:hover .cinematronHelp {
+  opacity: 1;
+}
+
+.cinematronTitle {
+  margin: 0;
+  transform: rotate(2deg);
+  text-align: right;
+}
+
+.cinematronDescription {
+  font-size: 16px;
+  margin-top: 10px;
+  transform: rotate(2deg);
+  text-align: right;
+}
+
+.muteButtonDescription {
+  font-size: 16px;
+  position: absolute;
+  text-align: right;
+  transform: rotate(2deg);
+  top: 280px;
+}
+
+.nextButtonDescription {
+  font-size: 16px;
+  transform: rotate(2deg);
+  position: absolute;
+  text-align: right;
+  top: 310px;
+  left: 1px;
+}
+
+.Mute {
+  left: -3px;
+}
+
+.Unmute {
+  left: -27px;
+}
+
 @media (max-width: 1375px) { 
   .macWrapper {
     width: 250px;
@@ -137,9 +193,27 @@ dark blue: 203c40
     top: 175px;
     height: 30px;
   }
+
+  .muteButtonDescription {
+    top: 247px;
+    left: 41px
+  }
+
+  .nextButtonDescription {
+    top: 272px;
+    left: 45px;
+  }
+
+  .Unmute {
+    left: 17px;
+  }
+
+  .cinematronWrapper {
+    height: 387px;
+  }
 }
 
-@media (max-width: 1280px) { 
+@media (max-width: 1300px) { 
   .macWrapper {
     width: 220px;
   }
@@ -160,9 +234,17 @@ dark blue: 203c40
     top: 154px;
     height: 25px;
   }
+
+  .cinematronWrapper {
+    height: 352px;
+  }
 }
 
 @media (max-width: 1070px) { 
+  .cinematronWrapper {
+    display: none;
+  }
+  
   .macWrapper {
     display: none;
   }
