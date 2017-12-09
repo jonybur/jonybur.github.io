@@ -77,7 +77,6 @@ dark blue: 203c40
 }
 
 .mac {
-  //position: absolute;
   width: 100%;
   bottom: 14%;
   z-index: 100;
@@ -98,21 +97,85 @@ dark blue: 203c40
 }
 
 .muteButton {
-  width: 35px;
+  width: 40px;
   height: 35px;
   position: absolute;
-  top: 165px;
+  top: 173px;
   left: 4px;
   cursor: pointer;
   z-index: 200;
 }
 
 .nextButton {
-  width: 35px;
+  width: 40px;
   height: 35px;
   position: absolute;
-  top: 200px;
+  top: 208px;
   left: 4px;
   cursor: pointer;
   z-index: 200;
+}
+
+@media (max-width: 1375px) { 
+  .macWrapper {
+    width: 250px;
+  }
+
+  .video {
+    width: 225px;
+    height: 140px;
+    top: 7px;
+    left: -25px;
+  }
+
+  .muteButton {
+    top: 145px;
+    height: 30px;
+  }
+
+  .nextButton {
+    top: 175px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 1280px) { 
+  .macWrapper {
+    width: 220px;
+  }
+
+  .video {
+    width: 200px;
+    height: 140px;
+    top: 0px;
+    left: -25px;
+  }
+
+  .muteButton {
+    top: 129px;
+    height: 25px;
+  }
+
+  .nextButton {
+    top: 154px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 1070px) { 
+  .macWrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) { 
+  .content {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 550px) { 
+  .content {
+    margin-left: 40px;
+  }
 }
