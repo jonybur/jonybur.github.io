@@ -166,11 +166,15 @@ dark blue: 203c40
   .macWrapper {
     display: none;
   }
+
+  .content {
+    margin-left: 100px;
+  }
 }
 
 @media (max-width: 850px) { 
   .content {
-    margin-left: 100px;
+    margin-left: 70px;
   }
 }
 
