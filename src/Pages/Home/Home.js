@@ -14,7 +14,8 @@ export class Home extends PureComponent {
 
     this.state = {
       player: null,
-      muteButtonText: "Unmute Video"
+      muteButtonText: "Unmute",
+      mac: "mutedmac"
     };
 
     this.onReady = this.onReady.bind(this);
@@ -45,9 +46,9 @@ export class Home extends PureComponent {
   }
 
   onMuteVideo = () => {
-
     this.setState({
-      muteButtonText: this.state.player.isMuted() ? 'Mute Video' : 'Unmute Video'
+      muteButtonText: this.state.player.isMuted() ? 'Mute' : 'Unmute',
+      mac: this.state.player.isMuted() ? 'mac' : 'mutedmac'
     })
 
     if (this.state.player.isMuted()) {
@@ -93,7 +94,7 @@ export class Home extends PureComponent {
             <a href="mailto:jobur93@gmail.com" target="_blank">Contact</a>
           </div>
           <div className="macWrapper">
-            <img className="mac" src="mac.png" alt="Vintage Macintosh"/>
+            <img className="mac" src={this.state.mac+".png"} alt="Vintage Macintosh"/>
             <YouTube
               videoId='nxxSIX3fmmo'
               onReady={this.onReady}
@@ -101,7 +102,7 @@ export class Home extends PureComponent {
               className="video"
             />
             <div className="muteButton" title={this.state.muteButtonText} onClick={this.onMuteVideo}/>
-            <div className="nextButton" title="Next Video" onClick={this.onNextVideo}/>
+            <div className="nextButton" title="Next" onClick={this.onNextVideo}/>
           </div>
         </div>
       </div>
