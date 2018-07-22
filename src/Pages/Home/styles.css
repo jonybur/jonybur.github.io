@@ -37,8 +37,8 @@
   color: #333;
 }
 
-.links a:hover,
-.links a:active{
+.links-1 a:hover,
+.links-1 a:active{
   background: linear-gradient(100deg, #ac2632, #52306c, #ac2632, #52306c);
   background-clip: text;
   background-size: 800% 200%;
@@ -49,6 +49,47 @@
   -o-animation: AnimationName 7s ease infinite;
   animation: AnimationName 7s ease infinite;
 }
+
+.links-2 a:hover,
+.links-2 a:active{
+  background: linear-gradient(100deg, #f5b655, #ac2632, #52306c, #ac2632);
+  background-clip: text;
+  background-size: 800% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: AnimationName 7s ease infinite;
+  -moz-animation: AnimationName 7s ease infinite;
+  -o-animation: AnimationName 7s ease infinite;
+  animation: AnimationName 7s ease infinite;
+}
+
+.links-3 a:hover,
+.links-3 a:active{
+  background: linear-gradient(100deg, #52306c, #ac2632, #5b5da4);
+  background-clip: text;
+  background-size: 800% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: AnimationName 7s ease infinite;
+  -moz-animation: AnimationName 7s ease infinite;
+  -o-animation: AnimationName 7s ease infinite;
+  animation: AnimationName 7s ease infinite;
+}
+
+.links-4 a:hover,
+.links-4 a:active{
+  background: linear-gradient(100deg, #56bbcd, #3f8ad0, #414597);
+  background-clip: text;
+  background-size: 800% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: AnimationName 7s ease infinite;
+  -moz-animation: AnimationName 7s ease infinite;
+  -o-animation: AnimationName 7s ease infinite;
+  animation: AnimationName 7s ease infinite;
+}
+
+
 
 .links-portfolio{
   font-size: 48.5px;
@@ -66,8 +107,8 @@
   font-size: 32.4px;
 }
 
-.links a:link,
-.links a:visited {
+.links-1 a:link,
+.links-1 a:visited {
 	display: inline-block;
 	text-decoration: none;
   border-bottom: 4px solid transparent;
