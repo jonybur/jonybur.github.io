@@ -7,7 +7,7 @@ import {
 import YouTube from 'react-youtube';
 import styles from './styles.css';
 
-export class Home extends PureComponent {
+export class Portfolio extends PureComponent {
 
   constructor(props) {
     super(props);
@@ -81,36 +81,14 @@ export class Home extends PureComponent {
     return (
       <div className="wrapper">
         <div className="links">
-          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/">Home</Link>
           <a href="https://www.github.com/jonybur" target="_blank">GitHub</a>
           <a href="https://www.linkedin.com/in/jonybur" target="_blank">LinkedIn</a>
           <a href="mailto:jobur93@gmail.com" target="_blank">Contact</a>
         </div>
         <div className="content">
-          <div className="header">
-            <h1>Hey there,</h1>
-            <p>My name is Jonathan Bursztyn,</p>
-            <p>I'm a Software Engineer at <a href="https://www.salesforce.com" target="_blank">Salesforce</a>.</p>
-            {/*<p>During my free time I enjoy <Link to="/photography">photography</Link>.</p>*/}
-          </div>
-          <div className="cinematronWrapper">
-            <div className="cinematronHelp">
-              <h1 className="cinematronTitle">Cinematron 6000</h1>
-              <p className="cinematronDescription">Invites you to enjoy this incredibly tasteful<br/>cinematrographic experience</p>
-              <p className={"muteButtonDescription " + this.state.muteButtonText}>{this.state.muteButtonText} -</p>
-              <p className="nextButtonDescription">Next -</p>
-            </div>
-            <div className="macWrapper">
-              <img className="mac" src={this.state.mac+".png"} alt="Vintage Macintosh"/>
-              <YouTube
-                videoId='nxxSIX3fmmo'
-                onReady={this.onReady}
-                opts={opts}
-                className="video"
-              />
-              <div className="muteButton" title={this.state.muteButtonText} onClick={this.onMuteVideo}/>
-              <div className="nextButton" title="Next" onClick={this.onNextVideo}/>
-            </div>
+          <div className="bais">
+            
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import {
   Link
 } from 'react-router-dom';
 import { Home } from './Pages/Home/Home.js'; 
-import { Photography } from './Pages/Photography/Photography.js'; 
+import { Portfolio } from './Pages/Portfolio/Portfolio.js'; 
 import { styles } from './Router.css';
 
 class MainRouter extends PureComponent {
@@ -14,7 +14,7 @@ class MainRouter extends PureComponent {
       <Router className="router">
         <div className="router">
           <Route exact path="/" component={Home}/>
-          <Route path="/photography" component={Photography}/>
+          <Route path="/portfolio" component={Portfolio}/>
           {/*<Route path="/portfolio" component={Home}/>*/}
         </div>
       </Router>
