@@ -12,73 +12,64 @@
   background-color: white;
 }
 
-.content-wrapper {
+.initials{
+  color: #333;
+  font-family: Neutratext;
+  font-size: 18px;
+}
+
+.links a{
+  color: #333;
+}
+
+.photo-wrapper {
   height: 90vh;
   overflow: hidden;
 }
 
-.content{
+.photo{
   width: auto;
   height: 100%;
 }
 
+.footer{
+  opacity: 0;
+}
+
 /* links */
 
-.links {
+.leftColumn {
   width: 52px;
   font-size: 32px;
   flex-grow: 0.35;
   display: flex;
   flex-direction: column;
   font-family: Cyberspace;
+  justify-content: space-between;
+  height: 90vh;
 }
 
-.links a {
-  color: #333;
-}
-
-.links-1 a:hover,
-.links-1 a:active{
+.links-portfolio-wrapper a:hover,
+.links-portfolio-wrapper a:active{
   background: linear-gradient(100deg, #ac2632, #52306c, #ac2632, #52306c);
-  background-clip: text;
-  background-size: 800% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: AnimationName 7s ease infinite;
-  -moz-animation: AnimationName 7s ease infinite;
-  -o-animation: AnimationName 7s ease infinite;
-  animation: AnimationName 7s ease infinite;
 }
 
-.links-2 a:hover,
-.links-2 a:active{
+.links-linkedin-wrapper a:hover,
+.links-linkedin-wrapper a:active{
   background: linear-gradient(100deg, #f5b655, #ac2632, #52306c, #ac2632);
-  background-clip: text;
-  background-size: 800% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: AnimationName 7s ease infinite;
-  -moz-animation: AnimationName 7s ease infinite;
-  -o-animation: AnimationName 7s ease infinite;
-  animation: AnimationName 7s ease infinite;
 }
 
-.links-3 a:hover,
-.links-3 a:active{
+.links-github-wrapper a:hover,
+.links-github-wrapper a:active{
   background: linear-gradient(100deg, #52306c, #ac2632, #5b5da4);
-  background-clip: text;
-  background-size: 800% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: AnimationName 7s ease infinite;
-  -moz-animation: AnimationName 7s ease infinite;
-  -o-animation: AnimationName 7s ease infinite;
-  animation: AnimationName 7s ease infinite;
 }
 
-.links-4 a:hover,
-.links-4 a:active{
+.links-photography-wrapper a:hover,
+.links-photography-wrapper a:active{
   background: linear-gradient(100deg, #56bbcd, #3f8ad0, #414597);
+}
+
+.links a:hover, a:active{
   background-clip: text;
   background-size: 800% 200%;
   -webkit-background-clip: text;
@@ -88,8 +79,6 @@
   -o-animation: AnimationName 7s ease infinite;
   animation: AnimationName 7s ease infinite;
 }
-
-
 
 .links-portfolio{
   font-size: 48.5px;
@@ -109,10 +98,6 @@
 
 .links-1 a:link,
 .links-1 a:visited {
-	display: inline-block;
-	text-decoration: none;
-  border-bottom: 4px solid transparent;
-	transition: border-bottom 0.2s;
 }
 
 @media (max-width: 1375px) { 

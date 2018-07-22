@@ -3,6 +3,11 @@
   src: url("Resources/cyberspace.otf") format("opentype");
 }
 
+@font-face{
+  font-family: Neutratext;
+  src: url("Resources/neutratext.otf") format("opentype");
+}
+
 html {
   height: 100%;
 }
