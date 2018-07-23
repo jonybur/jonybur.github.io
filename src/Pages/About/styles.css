@@ -1,0 +1,9 @@
+.about-wrapper {
+  height: 90vh;
+  width: 72.2vw;
+  justify-content: center;
+  display: flex;
+  font-family: NeutratextBook;
+  font-size: 28px;
+  flex-direction: column;
+}

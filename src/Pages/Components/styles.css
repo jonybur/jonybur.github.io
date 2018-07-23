@@ -61,7 +61,6 @@ i {
 .photo-wrapper {
   height: 90vh;
   overflow: hidden;
-  width: auto;
 }
 
 .photo {
@@ -152,6 +151,10 @@ a:active {
 
 .links-contact {
   font-size: 57.5px;
+}
+
+.links-1 a:link,
+.links-1 a:visited {
 }
 
 @media (max-width: 1375px) {
