@@ -1,5 +1,5 @@
 import React, { Component, PureComponent } from "react";
-import { HashRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import styles from "./styles.css";
 
 export class Home extends PureComponent {
@@ -72,28 +72,48 @@ export class Home extends PureComponent {
           {/*<span className="initials">jb</span>*/}
 
           <div className="links">
+            <div className="links-about-wrapper">
+              <Link to="/about" className="links-about">
+                about
+              </Link>
+            </div>
             <div className="links-portfolio-wrapper">
               <a href="" className="links-portfolio">
                 portfolio
               </a>
             </div>
             <div className="links-linkedin-wrapper">
-              <a href="" className="links-linkedin">
+              <a
+                href="https://www.linkedin.com/in/jonybur/"
+                target="_blank"
+                className="links-linkedin"
+              >
                 linkedin
               </a>
             </div>
             <div className="links-github-wrapper">
-              <a href="" className="links-github">
+              <a
+                href="https://github.com/jonybur"
+                target="_blank"
+                className="links-github"
+              >
                 github
               </a>
             </div>
+            {/*
             <div className="links-photography-wrapper">
               <a href="" className="links-photography">
                 photography
               </a>
             </div>
+            */}
+            <div className="links-contact-wrapper">
+              <a href="" className="links-contact">
+                contact
+              </a>
+            </div>
           </div>
-          <div className="footer">a</div>
+          <div className="footer">prev / next</div>
         </div>
         <div className="photo-wrapper">
           <img className="photo" src={"photo.jpg"} alt="Vintage Macintosh" />
