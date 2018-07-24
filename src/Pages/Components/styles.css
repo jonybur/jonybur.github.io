@@ -58,16 +58,6 @@ i {
   color: #333;
 }
 
-.photo-wrapper {
-  height: 90vh;
-  overflow: hidden;
-}
-
-.photo {
-  width: auto;
-  height: 100%;
-}
-
 .footer {
   color: #333;
   font-family: Neutratext;
@@ -77,14 +67,14 @@ i {
 /* links */
 
 .leftColumn {
-  width: 52px;
   font-size: 32px;
-  flex-grow: 0.35;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   font-family: Cyberspace;
   justify-content: space-between;
   height: 90vh;
+  width: 15vw;
 }
 
 .links-about-wrapper a:hover,
