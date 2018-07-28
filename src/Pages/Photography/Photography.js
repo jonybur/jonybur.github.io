@@ -8,16 +8,24 @@ export const ImageLoadingStatus = {
   FAILED_TO_LOAD: "failedtoload"
 };
 
-const PHOTO_COUNT = 27;
+const PHOTO_COUNT = 32;
 
 export class Photography extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = { imageStatus: ImageLoadingStatus.LOADING, currentPhoto: 1 };
+    let imageStatus = [];
+    for (let i = 0; i < PHOTO_COUNT; i++) {
+      imageStatus.push(ImageLoadingStatus.LOADING);
+    }
+    this.state = { imageStatus: imageStatus, currentPhoto: 1 };
   }
 
   handleImageLoaded() {
-    this.setState({ imageStatus: ImageLoadingStatus.LOADED });
+    const { currentPhoto, imageStatus } = this.state;
+    imageStatus[currentPhoto - 1] = ImageLoadingStatus.LOADED;
+    this.setState({ imageStatus: imageStatus });
+    console.log("loaded", imageStatus);
+    this.forceUpdate();
   }
 
   handleImageErrored() {
@@ -40,6 +48,8 @@ export class Photography extends PureComponent {
 
   render() {
     const { imageStatus, currentPhoto } = this.state;
+    console.log("render", imageStatus);
+    console.log(imageStatus[currentPhoto]);
     return (
       <div className="wrapper">
         <Menu
@@ -53,7 +63,10 @@ export class Photography extends PureComponent {
             alt="Vintage Macintosh"
             src={`photos/${currentPhoto}.jpg`}
             style={{
-              opacity: imageStatus === ImageLoadingStatus.LOADED ? 1 : 0
+              opacity:
+                imageStatus[currentPhoto - 1] === ImageLoadingStatus.LOADED
+                  ? 1
+                  : 0
             }}
             onLoad={this.handleImageLoaded.bind(this)}
             onError={this.handleImageErrored.bind(this)}

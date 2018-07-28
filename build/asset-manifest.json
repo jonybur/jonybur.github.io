@@ -1,7 +1,11 @@
 {
-  "main.css": "static/css/main.f2c4ab24.css",
-  "main.css.map": "static/css/main.f2c4ab24.css.map",
-  "main.js": "static/js/main.d822ba31.js",
-  "main.js.map": "static/js/main.d822ba31.js.map",
+  "main.css": "static/css/main.22b0b617.css",
+  "main.css.map": "static/css/main.22b0b617.css.map",
+  "main.js": "static/js/main.63d91986.js",
+  "main.js.map": "static/js/main.63d91986.js.map",
+  "static/media/NeutraText-Bold.otf": "static/media/NeutraText-Bold.eb0d8608.otf",
+  "static/media/NeutraText-Book.otf": "static/media/NeutraText-Book.cf9277dc.otf",
+  "static/media/NeutraText-BookItalic.otf": "static/media/NeutraText-BookItalic.17221a21.otf",
+  "static/media/NeutraText-DemiSC.otf": "static/media/NeutraText-DemiSC.07aeebd3.otf",
   "static/media/cyberspace.otf": "static/media/cyberspace.9cae1e2c.otf"
 }
