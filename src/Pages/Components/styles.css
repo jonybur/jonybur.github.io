@@ -55,7 +55,7 @@ i {
 }
 
 .links {
-  transform: scale(0.9);
+  transform: scale(0.85);
   transform-origin: center left;
 }
 
@@ -67,7 +67,12 @@ i {
 .footer {
   color: #333;
   font-family: NeutraTextDemiSC;
-  font-size: 16px;
+  font-size: 18px;
+  cursor: default;
+}
+
+.footer-button {
+  cursor: pointer;
 }
 
 /* links */

@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import styles from "./styles.css";
 
 export const MenuOptions = {
-  HOME: "home",
   ABOUT: "about",
+  PHOTOGRAPHY: "photography",
   PORTFOLIO: "portfolio",
   LINKEDIN: "linkedin",
   GITHUB: "github",
@@ -24,7 +24,7 @@ export class Menu extends PureComponent {
   };
 
   render() {
-    const { currentTab } = this.props;
+    const { currentTab, onPreviousClick, onNextClick } = this.props;
 
     return (
       <div className="leftColumn">
@@ -74,17 +74,6 @@ export class Menu extends PureComponent {
         </Link>
 
         <div className="links">
-          <div className="links-about-wrapper">
-            <Link
-              to={`/${MenuOptions.ABOUT}`}
-              className="links-about"
-              style={{
-                opacity: currentTab === MenuOptions.ABOUT ? 0.5 : 1
-              }}
-            >
-              {MenuOptions.ABOUT}
-            </Link>
-          </div>
           <div className="links-portfolio-wrapper">
             <Link
               to={`/${MenuOptions.PORTFOLIO}`}
@@ -114,13 +103,6 @@ export class Menu extends PureComponent {
               {MenuOptions.GITHUB}
             </a>
           </div>
-          {/*
-          <div className="links-photography-wrapper">
-            <a href="" className="links-photography">
-              photography
-            </a>
-          </div>
-          */}
           <div className="links-contact-wrapper">
             <a
               href="mailto:jobur93@gmail.com"
@@ -130,14 +112,31 @@ export class Menu extends PureComponent {
               {MenuOptions.CONTACT}
             </a>
           </div>
+          <div className="links-photography-wrapper">
+            <Link
+              to={`/${MenuOptions.PHOTOGRAPHY}`}
+              className="links-photography"
+              style={{
+                opacity: currentTab === MenuOptions.PHOTOGRAPHY ? 0.5 : 1
+              }}
+            >
+              photography
+            </Link>
+          </div>
         </div>
         <div
           className="footer"
           style={{
-            opacity: currentTab === MenuOptions.HOME ? 1 : 0
+            opacity: currentTab === MenuOptions.PHOTOGRAPHY ? 1 : 0
           }}
         >
-          prev / next
+          <span onClick={onPreviousClick} className="footer-button">
+            prev{" "}
+          </span>
+          /{" "}
+          <span onClick={onNextClick} className="footer-button">
+            next
+          </span>
         </div>
       </div>
     );

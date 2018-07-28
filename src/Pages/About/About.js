@@ -41,7 +41,7 @@ export class About extends PureComponent {
             </p>
             <p>
               ... or you can just check out{" "}
-              <Link to="/" className="link">
+              <Link to="/photography" className="link">
                 my photographs
               </Link>.
             </p>

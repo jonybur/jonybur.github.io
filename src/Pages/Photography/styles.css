@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-wrapper {
+  height: 90vh;
+  width: 75vw;
+  overflow: hidden;
+  text-align: center;
+}
+
+.photo {
+  width: auto;
+  height: 100%;
+  transition: opacity 0.75s ease-in;
+}
