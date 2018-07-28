@@ -4,27 +4,32 @@
 }
 
 @font-face {
-  font-family: Neutratext;
-  src: url("Resources/neutratext.otf") format("opentype");
+  font-family: NeutraTextBook;
+  src: url("Resources/NeutraText-Book.otf") format("opentype");
 }
 
 @font-face {
-  font-family: NeutratextBook;
-  src: url("Resources/neutratextbook.otf") format("opentype");
+  font-family: NeutraTextDemiSC;
+  src: url("Resources/NeutraText-DemiSC.otf") format("opentype");
 }
 
 @font-face {
-  font-family: NeutratextBookBold;
-  src: url("Resources/neutratextbookbold.otf") format("opentype");
+  font-family: NeutraTextBookItalic;
+  src: url("Resources/NeutraText-BookItalic.otf") format("opentype");
 }
 
 @font-face {
-  font-family: NeutratextBookItalic;
-  src: url("Resources/neutratextbookitalic.otf") format("opentype");
+  font-family: NeutraTextBold;
+  src: url("Resources/NeutraText-Bold.otf") format("opentype");
 }
 
 html {
   height: 100%;
+}
+
+p {
+  margin: 20px 0px;
+  line-height: 32px;
 }
 
 body {

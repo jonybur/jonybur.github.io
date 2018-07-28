@@ -1,25 +1,22 @@
 import React, { Component, PureComponent } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import styles from "./styles.css";
-import { MenuOptions } from "./types";
-import Obfuscate from "react-obfuscate";
 
-export default class Menu extends PureComponent {
+export const MenuOptions = {
+  HOME: "home",
+  ABOUT: "about",
+  PORTFOLIO: "portfolio",
+  LINKEDIN: "linkedin",
+  GITHUB: "github",
+  CONTACT: "contact"
+};
+
+export class Menu extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
       headerActive: 0
     };
-    /*
-    setInterval(() => {
-      const { headerActive } = this.state;
-      if (headerActive >= 1) {
-        this.setState({ headerActive: 0 });
-      } else {
-        this.setState({ headerActive: headerActive + 1 });
-      }
-    }, 10000);
-    */
   }
 
   getHeaderStatus = headerIndex => {
@@ -27,6 +24,8 @@ export default class Menu extends PureComponent {
   };
 
   render() {
+    const { currentTab } = this.props;
+
     return (
       <div className="leftColumn">
         <Link to="/">
@@ -76,12 +75,24 @@ export default class Menu extends PureComponent {
 
         <div className="links">
           <div className="links-about-wrapper">
-            <Link to={`/${MenuOptions.ABOUT}`} className="links-about">
+            <Link
+              to={`/${MenuOptions.ABOUT}`}
+              className="links-about"
+              style={{
+                opacity: currentTab === MenuOptions.ABOUT ? 0.5 : 1
+              }}
+            >
               {MenuOptions.ABOUT}
             </Link>
           </div>
           <div className="links-portfolio-wrapper">
-            <Link to={`/${MenuOptions.PORTFOLIO}`} className="links-portfolio">
+            <Link
+              to={`/${MenuOptions.PORTFOLIO}`}
+              className="links-portfolio"
+              style={{
+                opacity: currentTab === MenuOptions.PORTFOLIO ? 0.5 : 1
+              }}
+            >
               {MenuOptions.PORTFOLIO}
             </Link>
           </div>
@@ -111,12 +122,23 @@ export default class Menu extends PureComponent {
           </div>
           */}
           <div className="links-contact-wrapper">
-            <a href="" className="links-contact">
+            <a
+              href="mailto:jobur93@gmail.com"
+              target="_blank"
+              className="links-contact"
+            >
               {MenuOptions.CONTACT}
             </a>
           </div>
         </div>
-        <div className="footer">prev / next</div>
+        <div
+          className="footer"
+          style={{
+            opacity: currentTab === MenuOptions.HOME ? 1 : 0
+          }}
+        >
+          prev / next
+        </div>
       </div>
     );
   }

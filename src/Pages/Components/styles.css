@@ -50,17 +50,23 @@ i {
 
 .initials {
   color: #333;
-  font-family: Neutratext;
+  font-family: NeutraTextDemiSC;
   font-size: 18px;
+}
+
+.links {
+  transform: scale(0.9);
+  transform-origin: center left;
 }
 
 .links a {
   color: #333;
+  transition: -webkit-text-fill-color 1s ease;
 }
 
 .footer {
   color: #333;
-  font-family: Neutratext;
+  font-family: NeutraTextDemiSC;
   font-size: 16px;
 }
 
@@ -143,10 +149,6 @@ a:active {
   font-size: 57.5px;
 }
 
-.links-1 a:link,
-.links-1 a:visited {
-}
-
 @media (max-width: 1375px) {
 }
 
@@ -165,6 +167,7 @@ xrotate-3
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 .is-visible .cd-headline.rotate-3 i {
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
@@ -172,11 +175,13 @@ xrotate-3
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
+
 .cd-headline.rotate-3 i.in {
   -webkit-animation: cd-rotate-3-in 0.6s forwards;
   -moz-animation: cd-rotate-3-in 0.6s forwards;
   animation: cd-rotate-3-in 0.6s forwards;
 }
+
 .cd-headline.rotate-3 i.out {
   -webkit-animation: cd-rotate-3-out 0.6s forwards;
   -moz-animation: cd-rotate-3-out 0.6s forwards;
@@ -260,6 +265,7 @@ xrotate-3
     transform: rotateY(-180deg);
   }
 }
+
 .fullName {
   position: relative;
   right: 17px;
