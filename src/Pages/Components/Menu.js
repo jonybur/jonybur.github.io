@@ -1,6 +1,8 @@
 import React, { Component, PureComponent } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import styles from "./styles.css";
+import { MenuOptions } from "./types";
+import Obfuscate from "react-obfuscate";
 
 export default class Menu extends PureComponent {
   constructor(props) {
@@ -74,14 +76,14 @@ export default class Menu extends PureComponent {
 
         <div className="links">
           <div className="links-about-wrapper">
-            <Link to="/about" className="links-about">
-              about
+            <Link to={`/${MenuOptions.ABOUT}`} className="links-about">
+              {MenuOptions.ABOUT}
             </Link>
           </div>
           <div className="links-portfolio-wrapper">
-            <a href="" className="links-portfolio">
-              portfolio
-            </a>
+            <Link to={`/${MenuOptions.PORTFOLIO}`} className="links-portfolio">
+              {MenuOptions.PORTFOLIO}
+            </Link>
           </div>
           <div className="links-linkedin-wrapper">
             <a
@@ -89,7 +91,7 @@ export default class Menu extends PureComponent {
               target="_blank"
               className="links-linkedin"
             >
-              linkedin
+              {MenuOptions.LINKEDIN}
             </a>
           </div>
           <div className="links-github-wrapper">
@@ -98,7 +100,7 @@ export default class Menu extends PureComponent {
               target="_blank"
               className="links-github"
             >
-              github
+              {MenuOptions.GITHUB}
             </a>
           </div>
           {/*
@@ -110,7 +112,7 @@ export default class Menu extends PureComponent {
           */}
           <div className="links-contact-wrapper">
             <a href="" className="links-contact">
-              contact
+              {MenuOptions.CONTACT}
             </a>
           </div>
         </div>
