@@ -15,7 +15,8 @@ export class Menu extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      headerActive: 0
+      headerActive: 0,
+      shouldRender: false
     };
   }
 
@@ -32,8 +33,9 @@ export class Menu extends PureComponent {
           <div className="cd-headline rotate-3">
             <span
               className="cd-words-wrapper initials"
+              style={{ width: "180px" }}
               onMouseEnter={() => {
-                this.setState({ headerActive: 1 });
+                this.setState({ headerActive: 1, shouldRender: true });
               }}
               onMouseLeave={() => {
                 this.setState({ headerActive: 0 });
@@ -43,32 +45,34 @@ export class Menu extends PureComponent {
                 <i className={this.getHeaderStatus(0)}>j</i>
                 <i className={this.getHeaderStatus(0)}>b</i>
               </span>
-              <span
-                className="fullName"
-                onMouseEnter={() => {
-                  this.setState({ headerActive: 1 });
-                }}
-                onMouseLeave={() => {
-                  this.setState({ headerActive: 0 });
-                }}
-              >
-                <i className={this.getHeaderStatus(1)}>j</i>
-                <i className={this.getHeaderStatus(1)}>o</i>
-                <i className={this.getHeaderStatus(1)}>n</i>
-                <i className={this.getHeaderStatus(1)}>a</i>
-                <i className={this.getHeaderStatus(1)}>t</i>
-                <i className={this.getHeaderStatus(1)}>h</i>
-                <i className={this.getHeaderStatus(1)}>a</i>
-                <i className={`${this.getHeaderStatus(1)} charspace`}>n</i>
-                <i className={this.getHeaderStatus(1)}>b</i>
-                <i className={this.getHeaderStatus(1)}>u</i>
-                <i className={this.getHeaderStatus(1)}>r</i>
-                <i className={this.getHeaderStatus(1)}>s</i>
-                <i className={this.getHeaderStatus(1)}>z</i>
-                <i className={this.getHeaderStatus(1)}>t</i>
-                <i className={this.getHeaderStatus(1)}>y</i>
-                <i className={this.getHeaderStatus(1)}>n</i>
-              </span>
+              {this.state.shouldRender && (
+                <span
+                  className="fullName"
+                  onMouseEnter={() => {
+                    this.setState({ headerActive: 1 });
+                  }}
+                  onMouseLeave={() => {
+                    this.setState({ headerActive: 0 });
+                  }}
+                >
+                  <i className={this.getHeaderStatus(1)}>j</i>
+                  <i className={this.getHeaderStatus(1)}>o</i>
+                  <i className={this.getHeaderStatus(1)}>n</i>
+                  <i className={this.getHeaderStatus(1)}>a</i>
+                  <i className={this.getHeaderStatus(1)}>t</i>
+                  <i className={this.getHeaderStatus(1)}>h</i>
+                  <i className={this.getHeaderStatus(1)}>a</i>
+                  <i className={`${this.getHeaderStatus(1)} charspace`}>n</i>
+                  <i className={this.getHeaderStatus(1)}>b</i>
+                  <i className={this.getHeaderStatus(1)}>u</i>
+                  <i className={this.getHeaderStatus(1)}>r</i>
+                  <i className={this.getHeaderStatus(1)}>s</i>
+                  <i className={this.getHeaderStatus(1)}>z</i>
+                  <i className={this.getHeaderStatus(1)}>t</i>
+                  <i className={this.getHeaderStatus(1)}>y</i>
+                  <i className={this.getHeaderStatus(1)}>n</i>
+                </span>
+              )}
             </span>
           </div>
         </Link>
@@ -127,7 +131,11 @@ export class Menu extends PureComponent {
         <div
           className="footer"
           style={{
-            opacity: currentTab === MenuOptions.PHOTOGRAPHY ? 1 : 0
+            opacity:
+              currentTab === MenuOptions.PHOTOGRAPHY ||
+              currentTab === MenuOptions.PORTFOLIO
+                ? 1
+                : 0
           }}
         >
           <span onClick={onPreviousClick} className="footer-button">

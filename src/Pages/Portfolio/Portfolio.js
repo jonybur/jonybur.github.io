@@ -8,8 +8,17 @@ export class Portfolio extends PureComponent {
     return (
       <div className="wrapper">
         <Menu currentTab={MenuOptions.PORTFOLIO} />
-        <div className="portfolio-wrapper" />
+        <div className="portfolio-wrapper">e</div>
       </div>
+      /*
+      1: Board (Xamarin)
+      2: Baru/Cannabit (Xamarin)
+      3: BAIS (iOS)
+      4: Previando
+      5: RecargaPay
+      6: Design Center
+      7: North End Juice Co. (design)
+      */
     );
   }
 }

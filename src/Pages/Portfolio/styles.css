@@ -5,51 +5,9 @@
   align-items: center;
 }
 
-.about-wrapper {
+.portfolio-wrapper {
   height: 90vh;
   width: 75vw;
   overflow: hidden;
-  font-family: NeutraTextBook;
-  color: #333;
-  font-size: 28px;
-}
-
-.about {
-  margin: 0 100px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.intro {
-  font-family: NeutraTextBookItalic;
-  font-size: 38px;
-  margin-bottom: 30px;
-}
-
-.bold {
-  font-family: NeutraTextBold;
-}
-
-.link {
-  font-family: NeutraTextBold;
-  -webkit-text-fill-color: initial;
-  color: #333;
-}
-
-.link:visited {
-  color: #333;
-  -webkit-text-fill-color: initial;
-}
-
-.link:active {
-  color: #333;
-  -webkit-text-fill-color: initial;
-}
-
-.link:hover {
-  color: #888;
-  transition: color 0.2s ease;
-  -webkit-text-fill-color: initial;
+  text-align: center;
 }

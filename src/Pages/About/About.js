@@ -30,7 +30,7 @@ export class About extends PureComponent {
               </Link>, and during my spare time I indulge in photography.
             </p>
             <p>
-              If you’d like to reach me, please{" "}
+              If you would like to reach me, please{" "}
               <a
                 href="mailto:jobur93@gmail.com"
                 target="_blank"
