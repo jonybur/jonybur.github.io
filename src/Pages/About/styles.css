@@ -10,7 +10,7 @@
   width: 75vw;
   overflow: hidden;
   font-family: NeutraTextBook;
-  color: #333;
+  color: #666;
   font-size: 28px;
 }
 
@@ -24,7 +24,7 @@
 
 .intro {
   font-family: NeutraTextBookItalic;
-  font-size: 38px;
+  font-size: 28px;
   margin-bottom: 30px;
 }
 
@@ -33,23 +33,22 @@
 }
 
 .link {
-  font-family: NeutraTextBold;
+  color: #000;
   -webkit-text-fill-color: initial;
-  color: #333;
 }
 
 .link:visited {
-  color: #333;
+  color: #000;
   -webkit-text-fill-color: initial;
 }
 
 .link:active {
-  color: #333;
+  color: #000;
   -webkit-text-fill-color: initial;
 }
 
 .link:hover {
-  color: #888;
+  color: #ac2632;
   transition: color 0.2s ease;
   -webkit-text-fill-color: initial;
 }

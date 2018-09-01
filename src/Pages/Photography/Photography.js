@@ -8,7 +8,7 @@ export const ImageLoadingStatus = {
   FAILED_TO_LOAD: "failedtoload"
 };
 
-const PHOTO_COUNT = 32;
+const PHOTO_COUNT = 33;
 
 export class Photography extends PureComponent {
   constructor(props) {

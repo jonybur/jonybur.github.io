@@ -10,24 +10,25 @@ export class About extends PureComponent {
         <Menu currentTab={MenuOptions.ABOUT} />
         <div className="about-wrapper">
           <div className="about">
-            <p className="intro">Hello,</p>{" "}
+            <p>Hello,</p>
             <p>
-              My name is <span className="bold">Jonathan Bursztyn</span>. I’m a
-              Software Engineer from Buenos Aires, Argentina - currently working
-              at{" "}
+              My name is Jonathan Bursztyn. I’m a Software Engineer from Buenos
+              Aires, Argentina - currently working at{" "}
               <a
                 href="https://www.salesforce.com/"
                 target="_blank"
                 className="link"
               >
                 Salesforce
-              </a>.
+              </a>
+              .
             </p>
             <p>
               I enjoy programming and designing{" "}
               <Link to={`/${MenuOptions.PORTFOLIO}`} className="link">
                 awesome web and mobile applications
-              </Link>, and during my spare time I indulge in photography.
+              </Link>
+              , and during my spare time I indulge in photography.
             </p>
             <p>
               If you would like to reach me, please{" "}
@@ -37,13 +38,15 @@ export class About extends PureComponent {
                 className="link"
               >
                 shoot me an email
-              </a>.
+              </a>
+              .
             </p>
             <p>
               ... or you can just check out{" "}
               <Link to="/photography" className="link">
                 my photographs
-              </Link>.
+              </Link>
+              .
             </p>
           </div>
         </div>
