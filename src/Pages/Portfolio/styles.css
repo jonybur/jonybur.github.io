@@ -3,11 +3,65 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
+  color: #333333;
 }
 
 .portfolio-wrapper {
   height: 90vh;
   width: 75vw;
   overflow: hidden;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.column-wrapper {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.portfolio-left-column {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 45%;
+  justify-content: space-evenly;
+}
+
+.portfolio-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-name {
+  font-family: NeutraTextBook;
+  font-size: 58px;
+  margin-left: -5px;
+}
+
+.app-role {
+  font-size: 22px;
+  margin-top: 12px;
+  margin-left: -2px;
+}
+
+.app-description-header {
+  font-family: NeutraTextDemi;
+  font-size: 24px;
+  margin-left: -2px;
+}
+
+.app-description-body {
+  font-size: 22px;
+  margin-left: -1px;
+  line-height: 34px;
+}
+
+.app-divider {
+  width: 30px;
+  height: 2px;
+  background-color: #333333;
+  margin-top: 20px;
 }

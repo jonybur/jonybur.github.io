@@ -24,7 +24,6 @@ export class Photography extends PureComponent {
     const { currentPhoto, imageStatus } = this.state;
     imageStatus[currentPhoto - 1] = ImageLoadingStatus.LOADED;
     this.setState({ imageStatus: imageStatus });
-    console.log("loaded", imageStatus);
     this.forceUpdate();
   }
 
@@ -48,8 +47,6 @@ export class Photography extends PureComponent {
 
   render() {
     const { imageStatus, currentPhoto } = this.state;
-    console.log("render", imageStatus);
-    console.log(imageStatus[currentPhoto]);
     return (
       <div className="wrapper">
         <Menu

@@ -19,12 +19,13 @@
 }
 
 @font-face {
-  font-family: NeutraTextBold;
-  src: url("Resources/NeutraText-Bold.otf") format("opentype");
+  font-family: NeutraTextDemi;
+  src: url("Resources/NeutraText-Demi.otf") format("opentype");
 }
 
 html {
   height: 100%;
+  font-family: NeutraTextBook;
 }
 
 p {
