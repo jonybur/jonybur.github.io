@@ -10,10 +10,64 @@
   width: 75vw;
   overflow: hidden;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.mobile-photo {
+  display: none;
 }
 
 .photo {
   width: auto;
   height: 100%;
   transition: opacity 0.75s ease-in;
+}
+
+@media (max-width: 1300px) {
+  .photo {
+    width: 87%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1250px) {
+  .photo {
+    width: 75%;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .photo-wrapper {
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+    align-items: baseline;
+  }
+
+  .leftColumn {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .mobile-photo-wrappeer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-photo {
+    display: block;
+    width: 95%;
+    height: 95%;
+    margin-bottom: 10px;
+  }
 }

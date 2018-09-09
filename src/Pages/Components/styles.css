@@ -163,9 +163,6 @@ a:active {
   font-size: 57.5px;
 }
 
-@media (max-width: 1375px) {
-}
-
 /* -------------------------------- 
 
 xrotate-3 
@@ -283,4 +280,16 @@ xrotate-3
 .fullName {
   position: relative;
   right: 17px;
+}
+
+@media (max-width: 1140px) {
+  .links {
+    transform: scale(0.75);
+  }
+}
+
+@media (max-width: 1000px) {
+  .links {
+    transform: scale(0.55);
+  }
 }

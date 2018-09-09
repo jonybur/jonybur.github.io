@@ -45,6 +45,19 @@ export class Photography extends PureComponent {
     });
   };
 
+  getMobilePhotoList = () => {
+    const { imageStatus } = this.state;
+    return imageStatus.map((_, index) => (
+      <div className="mobile-photo-wrappeer">
+        <img
+          key={"mobile-img-" + index}
+          className="mobile-photo"
+          src={`photos/${index + 1}.jpg`}
+        />
+      </div>
+    ));
+  };
+
   render() {
     const { imageStatus, currentPhoto } = this.state;
     return (
@@ -57,7 +70,6 @@ export class Photography extends PureComponent {
         <div className="photo-wrapper">
           <img
             className="photo"
-            alt="Vintage Macintosh"
             src={`photos/${currentPhoto}.jpg`}
             style={{
               opacity:
@@ -68,6 +80,9 @@ export class Photography extends PureComponent {
             onLoad={this.handleImageLoaded.bind(this)}
             onError={this.handleImageErrored.bind(this)}
           />
+          <div className="mobile-photo-wrapper">
+            {this.getMobilePhotoList()}
+          </div>
         </div>
       </div>
     );
