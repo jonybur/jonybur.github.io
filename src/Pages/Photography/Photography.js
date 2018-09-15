@@ -52,6 +52,7 @@ export class Photography extends PureComponent {
         <img
           key={"mobile-img-" + index}
           className="mobile-photo"
+          alt="Analog photograph"
           src={`photos/${index + 1}.jpg`}
         />
       </div>
@@ -77,6 +78,7 @@ export class Photography extends PureComponent {
                   ? 1
                   : 0
             }}
+            alt="Analog photograph"
             onLoad={this.handleImageLoaded.bind(this)}
             onError={this.handleImageErrored.bind(this)}
           />

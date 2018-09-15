@@ -93,6 +93,7 @@ export class Menu extends PureComponent {
             <a
               href="https://www.linkedin.com/in/jonybur/"
               target="_blank"
+              rel="noopener noreferrer"
               className="links-linkedin"
             >
               {MenuOptions.LINKEDIN}
@@ -102,6 +103,7 @@ export class Menu extends PureComponent {
             <a
               href="https://github.com/jonybur"
               target="_blank"
+              rel="noopener noreferrer"
               className="links-github"
             >
               {MenuOptions.GITHUB}
@@ -111,6 +113,7 @@ export class Menu extends PureComponent {
             <a
               href="mailto:jobur93@gmail.com"
               target="_blank"
+              rel="noopener noreferrer"
               className="links-contact"
             >
               {MenuOptions.CONTACT}

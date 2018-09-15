@@ -1,5 +1,5 @@
-import React, { Component, PureComponent } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, { PureComponent } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { About } from "./Pages/About/About";
 import { Portfolio } from "./Pages/Portfolio/Portfolio";
 import { Photography } from "./Pages/Photography/Photography";

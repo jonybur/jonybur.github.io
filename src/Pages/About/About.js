@@ -17,6 +17,7 @@ export class About extends PureComponent {
               <a
                 href="https://www.salesforce.com/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="link"
               >
                 Salesforce
@@ -35,6 +36,7 @@ export class About extends PureComponent {
               <a
                 href="mailto:jobur93@gmail.com"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="link"
               >
                 shoot me an email
