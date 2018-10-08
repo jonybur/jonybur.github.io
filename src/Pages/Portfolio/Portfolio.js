@@ -89,7 +89,6 @@ export class Portfolio extends PureComponent {
 
     return (
       <div className="wrapper">
-        -
         <Menu
           currentTab={MenuOptions.PORTFOLIO}
           onPreviousClick={this.onPreviousClick}

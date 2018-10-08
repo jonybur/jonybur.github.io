@@ -48,3 +48,50 @@
   transition: color 0.2s ease;
   -webkit-text-fill-color: initial;
 }
+
+@media (mabax-width: 1300px) {
+  .photo {
+    width: 87%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1250px) {
+  .photo {
+    width: 75%;
+    height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .photo-wrapper {
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+    align-items: baseline;
+  }
+
+  .leftColumn {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .mobile-photo-wrappeer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-photo {
+    display: block;
+    width: 95%;
+    height: 95%;
+    margin-bottom: 10px;
+  }
+}

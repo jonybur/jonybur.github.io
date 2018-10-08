@@ -25,7 +25,7 @@
   transition: opacity 0.75s ease-in;
 }
 
-@media (mabax-width: 1300px) {
+@media (max-width: 1300px) {
   .photo {
     width: 87%;
     height: auto;
