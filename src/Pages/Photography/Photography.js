@@ -84,6 +84,7 @@ export class Photography extends PureComponent {
           />
           <div className="mobile-photo-wrapper">
             {this.getMobilePhotoList()}
+            <div className="mobile-photo-whitespace" />
           </div>
         </div>
       </div>

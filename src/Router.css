@@ -1,3 +1,7 @@
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 @font-face {
   font-family: Cyberspace;
   src: url("Resources/cyberspace.otf") format("opentype");

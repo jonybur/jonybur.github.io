@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  scroll-behavior: smooth;
 }
 
 .mobile-photo {
@@ -45,18 +46,19 @@
     width: 100%;
     overflow: scroll;
     align-items: baseline;
+    margin-top: 90px;
   }
 
   .leftColumn {
     display: none;
   }
 
-  .menu {
+  .photo {
     display: none;
   }
 
-  .photo {
-    display: none;
+  .mobile-menu {
+    display: flex;
   }
 
   .mobile-photo-wrappeer {
@@ -69,5 +71,11 @@
     width: 95%;
     height: 95%;
     margin-bottom: 10px;
+  }
+
+  .mobile-photo-whitespace {
+    height: 90px;
+    width: 100%;
+    background-color: #fcfcfc;
   }
 }
