@@ -1,6 +1,6 @@
 import React, { Component, PureComponent } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import styles from "./styles.scss";
+import styles from "./styles.module.css";
 
 export const MenuOptions = {
   ABOUT: "about",
@@ -21,22 +21,22 @@ export class Menu extends PureComponent {
   }
 
   getHeaderStatus = headerIndex => {
-    return this.state.headerActive === headerIndex ? "in" : "out";
+    return this.state.headerActive === headerIndex ? styles.in : styles.out;
   };
 
   render() {
     const { currentTab, onPreviousClick, onNextClick } = this.props;
 
     return (
-      <div className="menu">
-        <div className="mobile-menu">
-          <span className="mobile-name">JONATHAN BURSZTYN</span>
+      <div className={styles.menu}>
+        <div className={styles.mobileMenu}>
+          <span className={styles.mobileName}>JONATHAN BURSZTYN</span>
         </div>
         <div className={styles.leftColumn}>
           <Link to="/">
-            <div className="cd-headline rotate-3">
+            <div className={`${styles.cdHeadline} ${styles.rotate3}`}>
               <span
-                className="cd-words-wrapper initials"
+                className={`${styles.cdWordsWrapper} ${styles.initials}`}
                 style={{ width: "180px" }}
                 onMouseEnter={() => {
                   this.setState({ headerActive: 1, shouldRender: true });
@@ -51,7 +51,7 @@ export class Menu extends PureComponent {
                 </span>
                 {this.state.shouldRender && (
                   <span
-                    className="full-name"
+                    className={styles.fullName}
                     onMouseEnter={() => {
                       this.setState({ headerActive: 1 });
                     }}
@@ -66,7 +66,13 @@ export class Menu extends PureComponent {
                     <i className={this.getHeaderStatus(1)}>t</i>
                     <i className={this.getHeaderStatus(1)}>h</i>
                     <i className={this.getHeaderStatus(1)}>a</i>
-                    <i className={`${this.getHeaderStatus(1)} charspace`}>n</i>
+                    <i
+                      className={`${this.getHeaderStatus(1)} ${
+                        styles.charspace
+                      }`}
+                    >
+                      n
+                    </i>
                     <i className={this.getHeaderStatus(1)}>b</i>
                     <i className={this.getHeaderStatus(1)}>u</i>
                     <i className={this.getHeaderStatus(1)}>r</i>
@@ -81,11 +87,11 @@ export class Menu extends PureComponent {
             </div>
           </Link>
 
-          <div className="links">
-            <div className="links-portfolio-wrapper">
+          <div className={styles.links}>
+            <div className={styles.linksPortfolioWrapper}>
               <Link
                 to={`/${MenuOptions.PORTFOLIO}`}
-                className="links-portfolio"
+                className={styles.linksPortfolio}
                 style={{
                   opacity: currentTab === MenuOptions.PORTFOLIO ? 0.5 : 1
                 }}
@@ -93,40 +99,40 @@ export class Menu extends PureComponent {
                 {MenuOptions.PORTFOLIO}
               </Link>
             </div>
-            <div className="links-linkedin-wrapper">
+            <div className={styles.linksLinkedInWrapper}>
               <a
                 href="https://www.linkedin.com/in/jonybur/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="links-linkedin"
+                className={styles.linksLinkedIn}
               >
                 {MenuOptions.LINKEDIN}
               </a>
             </div>
-            <div className="links-github-wrapper">
+            <div className={styles.linksGitHubWrapper}>
               <a
                 href="https://github.com/jonybur"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="links-github"
+                className={styles.linksGitHub}
               >
                 {MenuOptions.GITHUB}
               </a>
             </div>
-            <div className="links-contact-wrapper">
+            <div className={styles.linksContactWrapper}>
               <a
-                href="mailto:jonathan@bursz.com"
+                href="mailto:jonathan@bursztyn.io"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="links-contact"
+                className={styles.linksContact}
               >
                 {MenuOptions.CONTACT}
               </a>
             </div>
-            <div className="links-photography-wrapper">
+            <div className={styles.linksPhotographyWrapper}>
               <Link
                 to={`/${MenuOptions.PHOTOGRAPHY}`}
-                className="links-photography"
+                className={styles.linksPhotography}
                 style={{
                   opacity: currentTab === MenuOptions.PHOTOGRAPHY ? 0.5 : 1
                 }}
@@ -136,7 +142,7 @@ export class Menu extends PureComponent {
             </div>
           </div>
           <div
-            className="footer"
+            className={styles.footer}
             style={{
               opacity:
                 currentTab === MenuOptions.PHOTOGRAPHY ||
@@ -145,11 +151,11 @@ export class Menu extends PureComponent {
                   : 0
             }}
           >
-            <span onClick={onPreviousClick} className="footer-button">
+            <span onClick={onPreviousClick} className={styles.footerButton}>
               prev{" "}
             </span>
             /{" "}
-            <span onClick={onNextClick} className="footer-button">
+            <span onClick={onNextClick} className={styles.footerButton}>
               next
             </span>
           </div>
