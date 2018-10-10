@@ -1,6 +1,6 @@
 import React, { Component, PureComponent } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import styles from "./styles.css";
+import styles from "./styles.scss";
 
 export const MenuOptions = {
   ABOUT: "about",
@@ -32,7 +32,7 @@ export class Menu extends PureComponent {
         <div className="mobile-menu">
           <span className="mobile-name">JONATHAN BURSZTYN</span>
         </div>
-        <div className="leftColumn">
+        <div className={styles.leftColumn}>
           <Link to="/">
             <div className="cd-headline rotate-3">
               <span
@@ -115,7 +115,7 @@ export class Menu extends PureComponent {
             </div>
             <div className="links-contact-wrapper">
               <a
-                href="mailto:jobur93@gmail.com"
+                href="mailto:jonathan@bursz.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="links-contact"
