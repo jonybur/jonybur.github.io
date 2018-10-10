@@ -1,15 +1,15 @@
 import React, { Component, PureComponent } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 import { Menu, MenuOptions } from "../Components/Menu";
 
 export class About extends PureComponent {
   render() {
     return (
-      <div className="wrapper">
+      <div className={styles.wrapper}>
         <Menu currentTab={MenuOptions.ABOUT} />
-        <div className="about-wrapper">
-          <div className="about">
+        <div className={styles.aboutWrapper}>
+          <div className={styles.about}>
             <p>Hello,</p>
             <p>
               My name is Jonathan Bursztyn. I’m a Software Engineer from Buenos
@@ -18,7 +18,7 @@ export class About extends PureComponent {
                 href="https://www.salesforce.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link"
+                className={styles.link}
               >
                 Salesforce
               </a>
@@ -26,7 +26,7 @@ export class About extends PureComponent {
             </p>
             <p>
               I enjoy programming and designing{" "}
-              <Link to={`/${MenuOptions.PORTFOLIO}`} className="link">
+              <Link to={`/${MenuOptions.PORTFOLIO}`} className={styles.link}>
                 awesome web and mobile applications
               </Link>
               , and during my spare time I indulge in photography.
@@ -37,7 +37,7 @@ export class About extends PureComponent {
                 href="mailto:jonathan@bursz.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link"
+                className={styles.link}
               >
                 shoot me an email
               </a>
@@ -45,7 +45,7 @@ export class About extends PureComponent {
             </p>
             <p>
               ... or you can just check out{" "}
-              <Link to="/photography" className="link">
+              <Link to="/photography" className={styles.link}>
                 my photographs
               </Link>
               .
