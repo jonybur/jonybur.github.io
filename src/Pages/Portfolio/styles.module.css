@@ -1,0 +1,67 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+}
+
+.portfolioWrapper {
+  height: 90vh;
+  width: 75vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.columnWrapper {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.portfolioLeftColumn {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 45%;
+  justify-content: space-evenly;
+}
+
+.portfolioHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.appName {
+  font-family: NeutraTextBook;
+  font-size: 58px;
+  margin-left: -5px;
+}
+
+.appRole {
+  font-size: 22px;
+  margin-top: 12px;
+  margin-left: -2px;
+}
+
+.appDescriptionHeader {
+  font-family: NeutraTextDemi;
+  font-size: 24px;
+  margin-left: -2px;
+}
+
+.appDescriptionBody {
+  font-size: 22px;
+  margin-left: -2px;
+  line-height: 34px;
+}
+
+.appDivider {
+  width: 30px;
+  height: 2px;
+  background-color: #333333;
+  margin-top: 20px;
+}

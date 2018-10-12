@@ -1,0 +1,81 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.photoWrapper {
+  height: 90vh;
+  width: 75vw;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  scroll-behavior: smooth;
+}
+
+.mobilePhoto {
+  display: none;
+}
+
+.photo {
+  width: auto;
+  height: 100%;
+  transition: opacity 0.75s ease-in;
+}
+
+@media (max-width: 1300px) {
+  .photo {
+    width: 87%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1250px) {
+  .photo {
+    width: 75%;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .photoWrapper {
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+    align-items: baseline;
+    margin-top: 90px;
+  }
+
+  .leftColumn {
+    display: none;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: flex;
+  }
+
+  .mobilePhotoWrappeer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobilePhoto {
+    display: block;
+    width: 95%;
+    height: 95%;
+    margin-bottom: 10px;
+  }
+
+  .mobilePhotoWhitespace {
+    height: 90px;
+    width: 100%;
+    background-color: #fcfcfc;
+  }
+}
