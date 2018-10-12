@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 import { Menu, MenuOptions } from "../Components/Menu";
 
 export class Portfolio extends PureComponent {
@@ -88,29 +88,29 @@ export class Portfolio extends PureComponent {
     const { currentProject, projects } = this.state;
 
     return (
-      <div className="wrapper">
+      <div className={styles.wrapper}>
         <Menu
           currentTab={MenuOptions.PORTFOLIO}
           onPreviousClick={this.onPreviousClick}
           onNextClick={this.onNextClick}
         />
-        <div className="portfolio-wrapper">
-          <div className="column-wrapper">
-            <div className="portfolio-left-column">
-              <div className="portfolio-header">
-                <span className="app-name">
+        <div className={styles.portfolioWrapper}>
+          <div className={styles.columnWrapper}>
+            <div className={styles.portfolioLeftColumn}>
+              <div className={styles.portfolioHeader}>
+                <span className={styles.appName}>
                   {projects[currentProject].name}
                 </span>
-                <span className="app-role">
+                <span className={styles.appRole}>
                   {projects[currentProject].role}
                 </span>
-                <div className="app-divider" />
+                <div className={styles.appDivider} />
               </div>
-              <div className="portfolio-body">
-                <span className="app-description-header">
+              <div className={styles.portfolioBody}>
+                <span className={styles.appDescriptionHeader}>
                   {projects[currentProject].descriptionHeader}
                 </span>
-                <p className="app-description-body">
+                <p className={styles.appDescriptionBody}>
                   {projects[currentProject].descriptionBody}
                 </p>
               </div>

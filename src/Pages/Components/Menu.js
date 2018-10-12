@@ -1,5 +1,5 @@
-import React, { Component, PureComponent } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, { PureComponent } from "react";
+import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 
 export const MenuOptions = {

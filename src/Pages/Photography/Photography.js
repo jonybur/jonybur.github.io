@@ -1,5 +1,5 @@
-import React, { Component, PureComponent } from "react";
-import styles from "./styles.css";
+import React, { PureComponent } from "react";
+import styles from "./styles.module.css";
 import { Menu, MenuOptions } from "../Components/Menu";
 
 export const ImageLoadingStatus = {
@@ -48,10 +48,10 @@ export class Photography extends PureComponent {
   getMobilePhotoList = () => {
     const { imageStatus } = this.state;
     return imageStatus.map((_, index) => (
-      <div className="mobile-photo-wrappeer">
+      <div className={styles.mobilePhotoWrappeer}>
         <img
           key={"mobile-img-" + index}
-          className="mobile-photo"
+          className={styles.mobilePhoto}
           alt="Analog photograph"
           src={`photos/${index + 1}.jpg`}
         />
@@ -62,15 +62,15 @@ export class Photography extends PureComponent {
   render() {
     const { imageStatus, currentPhoto } = this.state;
     return (
-      <div className="wrapper">
+      <div className={styles.wrapper}>
         <Menu
           currentTab={MenuOptions.PHOTOGRAPHY}
           onPreviousClick={this.onPreviousClick}
           onNextClick={this.onNextClick}
         />
-        <div className="photo-wrapper">
+        <div className={styles.photoWrapper}>
           <img
-            className="photo"
+            className={styles.photo}
             src={`photos/${currentPhoto}.jpg`}
             style={{
               opacity:
@@ -82,9 +82,9 @@ export class Photography extends PureComponent {
             onLoad={this.handleImageLoaded.bind(this)}
             onError={this.handleImageErrored.bind(this)}
           />
-          <div className="mobile-photo-wrapper">
+          <div className={styles.mobilephotoWrapper}>
             {this.getMobilePhotoList()}
-            <div className="mobile-photo-whitespace" />
+            <div className={styles.mobilePhotoWhitespace} />
           </div>
         </div>
       </div>
