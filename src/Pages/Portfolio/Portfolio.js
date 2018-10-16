@@ -10,6 +10,7 @@ import nejcImage3 from "./images/nejc/4.png";
 import nejcImage4 from "./images/nejc/2.png";
 import nejcImage5 from "./images/nejc/5.png";
 import nejcImage6 from "./images/nejc/7.png";
+import baisImage from "./images/bais/1.png";
 
 export class Portfolio extends PureComponent {
   createProject = (
@@ -37,7 +38,7 @@ export class Portfolio extends PureComponent {
     const projects = [
       this.createProject(
         "Flow Designer",
-        "Front End Development & Design",
+        "Software Engineering & Design",
         "Integration flows made easy",
         [
           `Flow Designer is a simple, web-based interface for designing Mule applications for Anypoint Platform.
@@ -53,7 +54,7 @@ export class Portfolio extends PureComponent {
       ),
       this.createProject(
         "North End Juice Co.",
-        "Brand Design",
+        "Brand Identity Design",
         "Smoothies with a vibe",
         [
           `Created the brand design for Richmond's #1 juice bar company. This popular joint is the go-to place to get fresh-pressed juices, açaí bowls, smoothies, to-go salads, hummus and baked empanadas while in Virginia.`,
@@ -100,7 +101,7 @@ export class Portfolio extends PureComponent {
       ),
       this.createProject(
         "RecargaPay",
-        "Lead iOS Developer",
+        "iOS Development",
         "Innovating mobile payments",
         [
           `With over 10 million users in Brazil, RecargaPay is one of the most used mobile payment solutions in the continent.
@@ -116,10 +117,21 @@ export class Portfolio extends PureComponent {
       ),
       this.createProject(
         "BAIS",
-        "Development & Design",
-        "Smoothies with a vibe",
-        []
-      ),
+        "iOS Development & Design",
+        "Connecting students in Buenos Aires",
+        [
+          `BAIS (acronym for Buenos Aires International Students) is the biggest exchange student NGO in Argentina.
+        Each semester over 10.000 students from all around the world attend at least one of their events that go
+        from roadtrips to clubbing. It is a kind of "home away from home" for this type of travelers.`,
+          `The app provided a social platform from which students could meet and chat with other students
+        residing in the same area.`
+        ],
+        <img
+          className={`${styles.recargaPayImage}`}
+          src={baisImage}
+          alt="BAIS"
+        />
+      ) /*,
       this.createProject(
         "Cannabit",
         "Development & Design",
@@ -137,7 +149,7 @@ export class Portfolio extends PureComponent {
         "Development & Design",
         "Smoothies with a vibe",
         []
-      )
+      )*/
     ];
 
     this.state = { projects, currentProject: 0 };
