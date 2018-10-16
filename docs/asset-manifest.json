@@ -6,7 +6,7 @@
   "static/js/1.f5546dbf.chunk.js.map": "/static/js/1.f5546dbf.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/Router.css": "/static/media/NeutraText-Demi.591c1e12.otf",
+  "static/media/Router.css": "/static/media/NeutraText-DemiSC.07aeebd3.otf",
   "static/media/1.png": "/static/media/1.893ad5b0.png",
   "static/media/8.png": "/static/media/8.cd8f6dc9.png",
   "static/media/4.png": "/static/media/4.f25f5dae.png",
@@ -15,6 +15,6 @@
   "static/media/7.png": "/static/media/7.d88df760.png",
   "static/css/main.954dcd21.chunk.css.map": "/static/css/main.954dcd21.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.841a28be4d713a31557cbc55859ea77f.js": "/precache-manifest.841a28be4d713a31557cbc55859ea77f.js",
+  "precache-manifest.4bf65e74f3aa6d27ccddf34dead2e444.js": "/precache-manifest.4bf65e74f3aa6d27ccddf34dead2e444.js",
   "service-worker.js": "/service-worker.js"
 }
