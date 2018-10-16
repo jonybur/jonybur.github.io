@@ -11,6 +11,7 @@ import nejcImage4 from "./images/nejc/2.png";
 import nejcImage5 from "./images/nejc/5.png";
 import nejcImage6 from "./images/nejc/7.png";
 import baisImage from "./images/bais/1.png";
+import cannabitImage from "./images/cannabit/1.png";
 
 export class Portfolio extends PureComponent {
   createProject = (
@@ -43,9 +44,9 @@ export class Portfolio extends PureComponent {
         [
           `Flow Designer is a simple, web-based interface for designing Mule applications for Anypoint Platform.
           Users can create integrations and 'flows' of data without needing to code.`,
-          `We have a special focus on layer separation, coverage, unit and component tests - with pipelines for CI/CD.
-          My primary job is to develop the UI utilizing React + Redux with the engineering team;
-          and collaborate with designs and prototypes with the UX team.`
+          `My primary job is to develop the UI utilizing React + Redux with the engineering team;
+          and collaborate with designs and prototypes with the UX team.`,
+          `We have a special focus on layer separation, coverage, unit and component tests - with pipelines for CI/CD.`
         ],
         <div>
           <img className={styles.mozartImage} src={mozartImage} alt="Mozart" />
@@ -57,7 +58,7 @@ export class Portfolio extends PureComponent {
         "Brand Identity Design",
         "Smoothies with a vibe",
         [
-          `Created the brand design for Richmond's #1 juice bar company. This popular joint is the go-to place to get fresh-pressed juices, açaí bowls, smoothies, to-go salads, hummus and baked empanadas while in Virginia.`,
+          `Created the brand design identity, logos and packaging for Richmond's #1 juice bar. This popular joint is the go-to place to get fresh-pressed juices, açaí bowls, smoothies, to-go salads, hummus and baked empanadas while in Virginia.`,
           `North End Juice Co. offers plenty of vegan and gluten-free friendly items. And is a brand dedicated to providing the people of Richmond with quality made-in-house fare.`
         ],
         <div className={styles.northEndWrapper}>
@@ -101,13 +102,13 @@ export class Portfolio extends PureComponent {
       ),
       this.createProject(
         "RecargaPay",
-        "iOS Development",
+        "Lead iOS Development",
         "Innovating mobile payments",
         [
           `With over 10 million users in Brazil, RecargaPay is one of the most used mobile payment solutions in the continent.
           The app allows its users to pay digital services such as prepaid mobile top-ups,
           bill payments, gift cards, public transport cards and peer to peer payments without needing a bank account.`,
-          `My primary job was to maintain the iOS app adding new features such as a system for premium subscriptions, among other enhancements.`
+          `My primary duty was to maintain the iOS app adding new features such as a system for premium subscriptions, among other enhancements.`
         ],
         <img
           className={`${styles.recargaPayImage}`}
@@ -131,13 +132,21 @@ export class Portfolio extends PureComponent {
           src={baisImage}
           alt="BAIS"
         />
-      ) /*,
+      ),
       this.createProject(
         "Cannabit",
-        "Development & Design",
-        "Smoothies with a vibe",
-        []
-      ),
+        "Xamarin Development & Design",
+        "Decentralizing markets",
+        [
+          `Cannabit was meant to become the Thomson Reuters of the cannabis industry. An ambitious project, with notable features that included to match up growers, distributors, real estate developers, doctors, researchers, journalists and investors to create an empowered market deal flow that included the utilization of blockchain technologies such as Ethereum.`,
+          `Worked in a team comprised of over 10 Silicon Valley veterans from which I had valuable entrepreneurship lessons. Was in charge of the entire frontend development, UI & UX design and prototyping.`
+        ],
+        <img
+          className={`${styles.recargaPayImage}`}
+          src={cannabitImage}
+          alt="Cannabit"
+        />
+      ) /*,
       this.createProject(
         "Baru",
         "Development & Design",

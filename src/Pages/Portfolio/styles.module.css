@@ -35,7 +35,7 @@
 .recargaPayImage {
   width: auto;
   height: 90%;
-  filter: drop-shadow(0px 5px 5px #ccc);
+  filter: drop-shadow(0px 5px 5px #efefef);
 }
 
 .portfolioRightColumn {
@@ -74,15 +74,6 @@
   width: auto;
   margin: 5px;
   height: 100%;
-}
-
-.nejcImage1 {
-}
-
-.nejcImage2 {
-}
-
-.nejcImage3 {
 }
 
 .mozartLoader {
