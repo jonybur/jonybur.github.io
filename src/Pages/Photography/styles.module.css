@@ -49,16 +49,8 @@
     margin-top: 90px;
   }
 
-  .leftColumn {
-    display: none;
-  }
-
   .photo {
     display: none;
-  }
-
-  .mobileMenu {
-    display: flex;
   }
 
   .mobilePhotoWrappeer {

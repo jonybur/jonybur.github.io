@@ -94,6 +94,7 @@ i {
   background-color: #fcfcfc;
   justify-content: center;
   align-content: center;
+  user-select: none;
 }
 
 .mobileName {
@@ -316,5 +317,13 @@ xrotate3
   .mobileMenu {
     left: 0;
     top: 0;
+  }
+
+  .mobileMenu {
+    display: flex;
+  }
+
+  .leftColumn {
+    display: none;
   }
 }

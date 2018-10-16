@@ -27,7 +27,65 @@
   flex-direction: column;
   height: 90%;
   width: 45%;
+  min-width: 45%;
+  padding-right: 50px;
   justify-content: space-evenly;
+}
+
+.recargaPayImage {
+  width: auto;
+  height: 90%;
+  filter: drop-shadow(0px 5px 5px #ccc);
+}
+
+.portfolioRightColumn {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.northEndRow {
+  width: 100%;
+  height: 30%;
+  margin: 5px 0px;
+}
+
+.mozartImage {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0px 15px 20px -10px rgba(0, 0, 0, 0.3);
+}
+
+.northEndWrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.nejcImage {
+  border-radius: 3%;
+  width: auto;
+  margin: 5px;
+  height: 100%;
+}
+
+.nejcImage1 {
+}
+
+.nejcImage2 {
+}
+
+.nejcImage3 {
+}
+
+.mozartLoader {
+  position: absolute;
 }
 
 .portfolioHeader {

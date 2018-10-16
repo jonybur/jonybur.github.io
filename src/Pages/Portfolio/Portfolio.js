@@ -1,11 +1,25 @@
 import React, { PureComponent } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import { Menu, MenuOptions } from "../Components/Menu";
+import { MozartLoader } from "./MozartLoader/MozartLoader";
+import mozartImage from "./images/mozart/1.png";
+import recargapayImage from "./images/recargapay/1.png";
+import nejcImage1 from "./images/nejc/8.png";
+import nejcImage2 from "./images/nejc/1.png";
+import nejcImage3 from "./images/nejc/4.png";
+import nejcImage4 from "./images/nejc/2.png";
+import nejcImage5 from "./images/nejc/5.png";
+import nejcImage6 from "./images/nejc/7.png";
 
 export class Portfolio extends PureComponent {
-  createProject = (name, role, descriptionHeader, descriptionBody) => {
-    return { name, role, descriptionHeader, descriptionBody };
+  createProject = (
+    name,
+    role,
+    descriptionHeader,
+    descriptionBody,
+    mediaElements
+  ) => {
+    return { name, role, descriptionHeader, descriptionBody, mediaElements };
   };
 
   /*
@@ -24,44 +38,105 @@ export class Portfolio extends PureComponent {
       this.createProject(
         "Flow Designer",
         "Front End Development & Design",
-        "Easy MuleSoft integrations",
-        "Lorem ipsum, bla bla bla. Esto es un test, bla bla, y mas texto que no importa, aparte aca hay otro texto. bla bli blu. No se que escribir aca, no tengo internet y no puedo ver el lorem ipsum. Salesforce es una empresa grande y Ohana es la familia de Salesforce. Estoy programando en un vuelo de camino a Japon."
+        "Integration flows made easy",
+        [
+          `Flow Designer is a simple, web-based interface for designing Mule applications for Anypoint Platform.
+          Users can create integrations and 'flows' of data without needing to code.`,
+          `We have a special focus on layer separation, coverage, unit and component tests - with pipelines for CI/CD.
+          My primary job is to develop the UI utilizing React + Redux with the engineering team;
+          and collaborate with designs and prototypes with the UX team.`
+        ],
+        <div>
+          <img className={styles.mozartImage} src={mozartImage} alt="Mozart" />
+          <MozartLoader />
+        </div>
       ),
       this.createProject(
         "North End Juice Co.",
         "Brand Design",
         "Smoothies with a vibe",
-        "Lorem ipsum, bla bla bla. Esto es un test, bla bla, y mas texto que no importa, aparte aca hay otro texto. bla bli blu. No se que escribir aca, no tengo internet y no puedo ver el lorem ipsum. Salesforce es una empresa grande y Ohana es la familia de Salesforce. Estoy programando en un vuelo de camino a Japon."
+        [
+          `Created the brand design for Richmond's #1 juice bar company. This popular joint is the go-to place to get fresh-pressed juices, açaí bowls, smoothies, to-go salads, hummus and baked empanadas while in Virginia.`,
+          `North End Juice Co. offers plenty of vegan and gluten-free friendly items. And is a brand dedicated to providing the people of Richmond with quality made-in-house fare.`
+        ],
+        <div className={styles.northEndWrapper}>
+          <div className={styles.northEndRow}>
+            <img
+              className={`${styles.nejcImage} ${styles.nejcImage1}`}
+              src={nejcImage1}
+              alt="North End Juice Co. 1"
+            />
+            <img
+              className={`${styles.nejcImage} ${styles.nejcImage2}`}
+              src={nejcImage2}
+              alt="North End Juice Co. 2"
+            />
+          </div>
+          <div className={styles.northEndRow}>
+            <img
+              className={`${styles.nejcImage} ${styles.nejcImage3}`}
+              src={nejcImage3}
+              alt="North End Juice Co. 3"
+            />
+            <img
+              className={`${styles.nejcImage} ${styles.nejcImage4}`}
+              src={nejcImage4}
+              alt="North End Juice Co. 4"
+            />
+          </div>
+          <div className={styles.northEndRow}>
+            <img
+              className={`${styles.nejcImage} ${styles.nejcImage5}`}
+              src={nejcImage5}
+              alt="North End Juice Co. 5"
+            />
+            <img
+              className={`${styles.nejcImage} ${styles.nejcImage6}`}
+              src={nejcImage6}
+              alt="North End Juice Co. 6"
+            />
+          </div>
+        </div>
       ),
       this.createProject(
         "RecargaPay",
         "Lead iOS Developer",
-        "Smoothies with a vibe",
-        "Lorem ipsum, bla bla bla. Esto es un test, bla bla, y mas texto que no importa, aparte aca hay otro texto. bla bli blu. No se que escribir aca, no tengo internet y no puedo ver el lorem ipsum. Salesforce es una empresa grande y Ohana es la familia de Salesforce. Estoy programando en un vuelo de camino a Japon."
+        "Innovating mobile payments",
+        [
+          `With over 10 million users in Brazil, RecargaPay is one of the most used mobile payment solutions in the continent.
+          The app allows its users to pay digital services such as prepaid mobile top-ups,
+          bill payments, gift cards, public transport cards and peer to peer payments without needing a bank account.`,
+          `My primary job was to maintain the iOS app adding new features such as a system for premium subscriptions, among other enhancements.`
+        ],
+        <img
+          className={`${styles.recargaPayImage}`}
+          src={recargapayImage}
+          alt="RecargaPay"
+        />
       ),
       this.createProject(
         "BAIS",
         "Development & Design",
         "Smoothies with a vibe",
-        "Lorem ipsum, bla bla bla. Esto es un test, bla bla, y mas texto que no importa, aparte aca hay otro texto. bla bli blu. No se que escribir aca, no tengo internet y no puedo ver el lorem ipsum. Salesforce es una empresa grande y Ohana es la familia de Salesforce. Estoy programando en un vuelo de camino a Japon."
+        []
       ),
       this.createProject(
         "Cannabit",
         "Development & Design",
         "Smoothies with a vibe",
-        "Lorem ipsum, bla bla bla. Esto es un test, bla bla, y mas texto que no importa, aparte aca hay otro texto. bla bli blu. No se que escribir aca, no tengo internet y no puedo ver el lorem ipsum. Salesforce es una empresa grande y Ohana es la familia de Salesforce. Estoy programando en un vuelo de camino a Japon."
+        []
       ),
       this.createProject(
         "Baru",
         "Development & Design",
         "Smoothies with a vibe",
-        "Lorem ipsum, bla bla bla. Esto es un test, bla bla, y mas texto que no importa, aparte aca hay otro texto. bla bli blu. No se que escribir aca, no tengo internet y no puedo ver el lorem ipsum. Salesforce es una empresa grande y Ohana es la familia de Salesforce. Estoy programando en un vuelo de camino a Japon."
+        []
       ),
       this.createProject(
         "Board",
         "Development & Design",
         "Smoothies with a vibe",
-        "Lorem ipsum, bla bla bla. Esto es un test, bla bla, y mas texto que no importa, aparte aca hay otro texto. bla bli blu. No se que escribir aca, no tengo internet y no puedo ver el lorem ipsum. Salesforce es una empresa grande y Ohana es la familia de Salesforce. Estoy programando en un vuelo de camino a Japon."
+        []
       )
     ];
 
@@ -110,10 +185,13 @@ export class Portfolio extends PureComponent {
                 <span className={styles.appDescriptionHeader}>
                   {projects[currentProject].descriptionHeader}
                 </span>
-                <p className={styles.appDescriptionBody}>
-                  {projects[currentProject].descriptionBody}
-                </p>
+                {projects[currentProject].descriptionBody.map(body => (
+                  <p className={styles.appDescriptionBody}>{body}</p>
+                ))}
               </div>
+            </div>
+            <div className={styles.portfolioRightColumn}>
+              {projects[currentProject].mediaElements}
             </div>
           </div>
         </div>

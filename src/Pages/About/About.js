@@ -34,7 +34,7 @@ export class About extends PureComponent {
             <p>
               If you would like to reach me, please{" "}
               <a
-                href="mailto:jonathan@bursz.com"
+                href="mailto:jonathan@bursztyn.io"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
