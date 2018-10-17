@@ -98,9 +98,16 @@ i {
 }
 
 .mobileName {
-  align-items: center;
   display: flex;
   margin-top: 5px;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mobileName:visited {
+  color: #333;
 }
 
 /* links */

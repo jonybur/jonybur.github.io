@@ -38,7 +38,9 @@ export class Menu extends PureComponent {
           className={styles.mobileMenu}
           style={{ display: !showMobileMenu && "none" }}
         >
-          <span className={styles.mobileName}>JONATHAN BURSZTYN</span>
+          <Link to="/" className={styles.mobileName}>
+            JONATHAN BURSZTYN
+          </Link>
         </div>
         <div className={styles.leftColumn}>
           <Link to="/">

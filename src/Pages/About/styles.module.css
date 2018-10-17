@@ -60,11 +60,15 @@
 }
 
 @media (max-width: 800px) {
+  .wrapper {
+    display: flex;
+  }
   .about {
     margin: 0;
   }
 
   .aboutWrapper {
+    width: 83%;
     font-size: 22px;
   }
 
