@@ -121,7 +121,7 @@
 @media (max-height: 800px) {
   .portfolioBody {
     overflow: scroll;
-    height: 60%;
+    height: 70%;
   }
 }
 
@@ -133,7 +133,7 @@
     font-size: 20px;
   }
   .appDescriptionHeader {
-    font-size: 22px;
+    font-size: 20px;
   }
   .appDescriptionBody {
     font-size: 18px;
