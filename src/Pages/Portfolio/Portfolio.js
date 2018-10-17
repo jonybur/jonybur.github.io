@@ -229,7 +229,6 @@ export class Portfolio extends PureComponent {
 
   render() {
     const { currentProject, projects } = this.state;
-
     return (
       <div className={styles.wrapper}>
         <Menu
@@ -259,7 +258,7 @@ export class Portfolio extends PureComponent {
               </div>
             </div>
             <div className={styles.portfolioRightColumn}>
-              {projects[currentProject].mediaElements}
+              {projects[currentProject].mediaElement}
             </div>
           </div>
           <div className={styles.mobilePortfolioWrapper}>
