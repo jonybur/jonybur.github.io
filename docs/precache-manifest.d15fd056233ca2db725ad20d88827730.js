@@ -60,16 +60,16 @@ self.__precacheManifest = [
     "url": "/static/media/cyberspace.9cae1e2c.otf"
   },
   {
-    "revision": "07aeebd3f71f77a0f7b3b4fbe09cce8e",
-    "url": "/static/media/NeutraText-DemiSC.07aeebd3.otf"
-  },
-  {
     "revision": "17221a21fa9f650aa16ed08d72c37778",
     "url": "/static/media/NeutraText-BookItalic.17221a21.otf"
   },
   {
     "revision": "cf9277dcadd1c65874736d760ac8415a",
     "url": "/static/media/NeutraText-Book.cf9277dc.otf"
+  },
+  {
+    "revision": "07aeebd3f71f77a0f7b3b4fbe09cce8e",
+    "url": "/static/media/NeutraText-DemiSC.07aeebd3.otf"
   },
   {
     "revision": "591c1e12b842f438fb20429634ea9626",
