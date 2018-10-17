@@ -19,9 +19,17 @@ export class Portfolio extends PureComponent {
     role,
     descriptionHeader,
     descriptionBody,
-    mediaElements
+    mediaElement,
+    mobileMediaElement
   ) => {
-    return { name, role, descriptionHeader, descriptionBody, mediaElements };
+    return {
+      name,
+      role,
+      descriptionHeader,
+      descriptionBody,
+      mediaElement,
+      mobileMediaElement
+    };
   };
 
   /*
@@ -51,6 +59,9 @@ export class Portfolio extends PureComponent {
         <div>
           <img className={styles.mozartImage} src={mozartImage} alt="Mozart" />
           <MozartLoader />
+        </div>,
+        <div>
+          <img className={styles.mozartImage} src={mozartImage} alt="Mozart" />
         </div>
       ),
       this.createProject(
@@ -98,6 +109,32 @@ export class Portfolio extends PureComponent {
               alt="North End Juice Co. 6"
             />
           </div>
+        </div>,
+        <div className={styles.northEndWrapper}>
+          <div className={styles.northEndRow}>
+            <img
+              className={`${styles.nejcImage} ${styles.nejcImage1}`}
+              src={nejcImage1}
+              alt="North End Juice Co. 1"
+            />
+            <img
+              className={`${styles.nejcImage} ${styles.nejcImage2}`}
+              src={nejcImage2}
+              alt="North End Juice Co. 2"
+            />
+          </div>
+          <div className={styles.northEndRow}>
+            <img
+              className={`${styles.nejcImage} ${styles.nejcImage3}`}
+              src={nejcImage5}
+              alt="North End Juice Co. 3"
+            />
+            <img
+              className={`${styles.nejcImage} ${styles.nejcImage4}`}
+              src={nejcImage4}
+              alt="North End Juice Co. 4"
+            />
+          </div>
         </div>
       ),
       this.createProject(
@@ -114,12 +151,17 @@ export class Portfolio extends PureComponent {
           className={`${styles.recargaPayImage}`}
           src={recargapayImage}
           alt="RecargaPay"
+        />,
+        <img
+          className={`${styles.recargaPayImage}`}
+          src={recargapayImage}
+          alt="RecargaPay"
         />
       ),
       this.createProject(
         "BAIS",
         "iOS Development & Design",
-        "Connecting students in Buenos Aires",
+        "Connecting students in Argentina",
         [
           `BAIS (acronym for Buenos Aires International Students) is the biggest exchange student NGO in Argentina.
         Each semester over 10.000 students from all around the world attend at least one of their events that go
@@ -131,22 +173,27 @@ export class Portfolio extends PureComponent {
           className={`${styles.recargaPayImage}`}
           src={baisImage}
           alt="BAIS"
+        />,
+        <img
+          className={`${styles.recargaPayImage}`}
+          src={baisImage}
+          alt="BAIS"
         />
-      ),
+      ) /*,
       this.createProject(
         "Cannabit",
         "Xamarin Development & Design",
         "Decentralizing markets",
         [
-          `Cannabit was meant to become the Thomson Reuters of the cannabis industry. An ambitious project, with notable features that included to match up growers, distributors, real estate developers, doctors, researchers, journalists and investors to create an empowered market deal flow that included the utilization of blockchain technologies such as Ethereum.`,
-          `Worked in a team comprised of over 10 Silicon Valley veterans from which I had valuable entrepreneurship lessons. Was in charge of the entire frontend development, UI & UX design and prototyping.`
+          `Cannabit was an ambitious project, with notable features that included to match up growers, distributors, real estate developers, doctors, researchers, journalists and investors to create an empowered market deal flow that included the utilization of blockchain technologies such as Ethereum.`,
+          `Worked in a team comprised of over 10 Silicon Valley veterans, and my primary duty was to be in charge of the entire frontend development, UI & UX design and prototyping.`
         ],
         <img
           className={`${styles.recargaPayImage}`}
           src={cannabitImage}
           alt="Cannabit"
         />
-      ) /*,
+      ),
       this.createProject(
         "Baru",
         "Development & Design",
@@ -214,6 +261,29 @@ export class Portfolio extends PureComponent {
             <div className={styles.portfolioRightColumn}>
               {projects[currentProject].mediaElements}
             </div>
+          </div>
+          <div className={styles.mobilePortfolioWrapper}>
+            {projects.map(project => (
+              <div className={styles.mobileProjectWrapper}>
+                <div className={styles.portfolioHeader}>
+                  <span className={styles.appName}>{project.name}</span>
+                  <span className={styles.appRole}>{project.role}</span>
+                  <div className={styles.appDivider} />
+                </div>
+                <div className={styles.mobileMediaElement}>
+                  {project.mobileMediaElement}
+                </div>
+                <div className={styles.portfolioBody}>
+                  <span className={styles.appDescriptionHeader}>
+                    {project.descriptionHeader}
+                  </span>
+                  {project.descriptionBody.map(body => (
+                    <p className={styles.appDescriptionBody}>{body}</p>
+                  ))}
+                </div>
+              </div>
+            ))}
+            <div className={styles.mobilePortfolioWhitespace} />
           </div>
         </div>
       </div>

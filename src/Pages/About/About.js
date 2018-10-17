@@ -7,7 +7,7 @@ export class About extends PureComponent {
   render() {
     return (
       <div className={styles.wrapper}>
-        <Menu currentTab={MenuOptions.ABOUT} />
+        <Menu currentTab={MenuOptions.ABOUT} showMobileMenu={false} />
         <div className={styles.aboutWrapper}>
           <div className={styles.about}>
             <p>Hello,</p>

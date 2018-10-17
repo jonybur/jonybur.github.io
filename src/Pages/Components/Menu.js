@@ -25,11 +25,19 @@ export class Menu extends PureComponent {
   };
 
   render() {
-    const { currentTab, onPreviousClick, onNextClick } = this.props;
+    const {
+      currentTab,
+      onPreviousClick,
+      onNextClick,
+      showMobileMenu = true
+    } = this.props;
 
     return (
       <div className={styles.menu}>
-        <div className={styles.mobileMenu}>
+        <div
+          className={styles.mobileMenu}
+          style={{ display: !showMobileMenu && "none" }}
+        >
           <span className={styles.mobileName}>JONATHAN BURSZTYN</span>
         </div>
         <div className={styles.leftColumn}>

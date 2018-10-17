@@ -22,6 +22,10 @@
   align-items: center;
 }
 
+.mobilePortfolioWrapper {
+  display: none;
+}
+
 .portfolioLeftColumn {
   display: flex;
   flex-direction: column;
@@ -114,4 +118,115 @@
   height: 2px;
   background-color: #333333;
   margin-top: 20px;
+}
+
+@media (max-height: 820px) and (min-width: 800px) {
+  .appName {
+    font-size: 36px;
+  }
+  .appRole {
+    font-size: 20px;
+  }
+
+  .appDescriptionHeader {
+    font-size: 22px;
+  }
+
+  .appDescriptionBody {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .portfolioWrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .nejcImage {
+    border-radius: 5%;
+    width: 45%;
+    margin: 0px 10px 10px 0;
+    height: 100%;
+  }
+
+  .mobileMediaElement {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .northEndRow {
+    margin: 0;
+  }
+
+  .appName {
+    margin-left: 0;
+  }
+
+  .appDivider {
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 1px;
+    margin-bottom: 20px;
+  }
+
+  .portfolioBody {
+    width: 95%;
+  }
+
+  .mobileProjectWrapper {
+    margin-bottom: 30px;
+    width: 90%;
+    margin-top: 5px;
+  }
+
+  .mobilePortfolioWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+    align-items: center;
+  }
+
+  .columnWrapper {
+    display: none;
+  }
+
+  .appName {
+    font-size: 36px;
+  }
+
+  .appRole {
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  .appDescriptionHeader {
+    font-size: 22px;
+    margin-left: 0;
+  }
+
+  .appDescriptionBody {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .mobilePortfolioWhitespace {
+    height: 90px;
+    width: 100%;
+    background-color: #fcfcfc;
+  }
+
+  .recargaPayImage {
+    width: 50%;
+  }
+
+  .baisImage {
+    width: 50%;
+  }
 }
