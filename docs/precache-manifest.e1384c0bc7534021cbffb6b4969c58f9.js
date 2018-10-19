@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/1.613220ba.png"
   },
   {
-    "revision": "595b40a07fd26b2e70bd",
-    "url": "/static/css/main.f81a5747.chunk.css"
+    "revision": "75a180507c3e19a2dbbf",
+    "url": "/static/css/main.35c25122.chunk.css"
   },
   {
     "revision": "5fc0130c5187f56f8601",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/static/media/5.856cf4c1.png"
   },
   {
-    "revision": "595b40a07fd26b2e70bd",
-    "url": "/static/js/main.595b40a0.chunk.js"
+    "revision": "75a180507c3e19a2dbbf",
+    "url": "/static/js/main.75a18050.chunk.js"
   },
   {
     "revision": "f25f5daebfe1c843697f73147f20e732",
@@ -60,12 +60,12 @@ self.__precacheManifest = [
     "url": "/static/media/cyberspace.9cae1e2c.otf"
   },
   {
-    "revision": "07aeebd3f71f77a0f7b3b4fbe09cce8e",
-    "url": "/static/media/NeutraText-DemiSC.07aeebd3.otf"
-  },
-  {
     "revision": "cf9277dcadd1c65874736d760ac8415a",
     "url": "/static/media/NeutraText-Book.cf9277dc.otf"
+  },
+  {
+    "revision": "07aeebd3f71f77a0f7b3b4fbe09cce8e",
+    "url": "/static/media/NeutraText-DemiSC.07aeebd3.otf"
   },
   {
     "revision": "17221a21fa9f650aa16ed08d72c37778",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/static/media/NeutraText-Demi.591c1e12.otf"
   },
   {
-    "revision": "dc463d1036edee9ac55987edc766c2b2",
+    "revision": "15d989ec686fcdd67e98d5314e204a02",
     "url": "/index.html"
   }
 ];
