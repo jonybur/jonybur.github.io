@@ -47,16 +47,20 @@ export class Photography extends PureComponent {
 
   getMobilePhotoList = () => {
     const { imageStatus } = this.state;
-    return imageStatus.map((_, index) => (
-      <div className={styles.mobilePhotoWrappeer}>
-        <img
-          key={"mobile-img-" + index}
-          className={styles.mobilePhoto}
-          alt="Analog photograph"
-          src={`photos/${index + 1}.jpg`}
-        />
-      </div>
-    ));
+    return (
+      imageStatus &&
+      imageStatus.length > 0 &&
+      imageStatus.map((_, index) => (
+        <div className={styles.mobilePhotoWrappeer}>
+          <img
+            key={"mobile-img-" + index}
+            className={styles.mobilePhoto}
+            alt="Analog photograph"
+            src={`photos/${index + 1}.jpg`}
+          />
+        </div>
+      ))
+    );
   };
 
   render() {
