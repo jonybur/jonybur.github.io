@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rm -rf docs && mv build docs && echo bursztyn.io > CNAME && mv CNAME docs && echo bursztyn.io > CNAME",
+    "build": "react-scripts build",
+    "deploy": "react-scripts build && rm -rf docs && mv build docs && echo bursztyn.io > CNAME && mv CNAME docs && echo bursztyn.io > CNAME",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
