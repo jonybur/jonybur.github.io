@@ -1,3 +1,46 @@
+@keyframes carousel1 {
+  0% {
+    opacity: 0;
+  }
+  3%,
+  30% {
+    opacity: 1;
+  }
+  36%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes carousel2 {
+  0%,
+  30% {
+    opacity: 0;
+  }
+  36%,
+  66% {
+    opacity: 1;
+  }
+  69%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes carousel3 {
+  0%,
+  63% {
+    opacity: 0;
+  }
+  69%,
+  97% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .wrapper {
   display: flex;
   height: 100vh;
@@ -34,6 +77,35 @@
   min-width: 45%;
   padding-right: 50px;
   justify-content: space-evenly;
+}
+
+.baisIphoneWrapper {
+  width: auto;
+  height: 80%;
+}
+
+.baisImageWrapper {
+  filter: drop-shadow(0px 5px 5px #efefef);
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.baisImage {
+  position: absolute;
+  width: auto;
+  height: 80%;
+}
+
+.baisImage1 {
+  animation: carousel1 9s infinite linear;
+}
+.baisImage2 {
+  animation: carousel2 9s infinite linear;
+}
+.baisImage3 {
+  animation: carousel3 9s infinite linear;
 }
 
 .recargaPayImage {
@@ -93,11 +165,13 @@
 .appName {
   font-family: NeutraTextBook;
   font-size: 58px;
+  margin-left: -5px;
 }
 
 .appRole {
   font-size: 22px;
   margin-top: 12px;
+  margin-left: -2px;
 }
 
 .appDescriptionHeader {
