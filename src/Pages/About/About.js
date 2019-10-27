@@ -12,15 +12,15 @@ export class About extends PureComponent {
           <div className={styles.about}>
             <p>Hello,</p>
             <p>
-              My name is Jonathan Bursztyn. I’m a Software Engineer from Buenos
-              Aires, Argentina - currently working at{" "}
+              My name is Jonathan Bursztyn. I’m a Full Stack Software Engineer
+              in London, UK - currently working at{" "}
               <a
-                href="https://www.salesforce.com/"
+                href="https://www.yieldify.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
               >
-                Salesforce
+                Yieldify
               </a>
               .
             </p>
