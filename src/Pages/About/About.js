@@ -15,12 +15,12 @@ export class About extends PureComponent {
               My name is Jonathan Bursztyn. I’m a Full Stack Software Engineer
               in London, UK - currently working at{" "}
               <a
-                href="https://www.bumble.com/"
+                href="https://www.rockstargames.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
               >
-                Bumble
+                Rockstar Games
               </a>
               .
             </p>
